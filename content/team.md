@@ -83,7 +83,7 @@ draft: false
   <!-- Postdocs -->
   <div class="team-section">
     <h2>Postdocs</h2>
-    <p class="team-subtle">Current postdoctoral researchers contributing to the PHSD/PHQMD programme.</p>
+    <p class="team-subtle">Current postdoctoral researchers contributing to the PHSD/PHQMD code.</p>
 
     <div class="row">
       <div class="col-sm-6 col-md-4">
@@ -99,18 +99,21 @@ draft: false
         </div>
       </div>
 
-      <!-- NEW postdoc -->
       <div class="col-sm-6 col-md-4">
         <div class="team-card text-center">
-          <img class="team-avatar" src="/img/team/person.webp" alt="Jiaxing Zhau">
-          <div class="team-name">Dr. Jiaxing Zhau</div>
+          <img class="team-avatar" src="/img/team/taesoo.webp" alt="Jiaxing Zhao">
+          <div class="team-name">Dr. Jiaxing Zhao</div>
           <div class="team-links">
             <a href="mailto:jzhao@itp.uni-frankfurt.de">jzhao@itp.uni-frankfurt.de</a>
           </div>
+          <div class="team-links" style="margin-top:6px;">
+            <a href="https://inspirehep.net/authors/1615539" target="_blank">Publications</a>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
+     </div>
+
+    
 
   <!-- PhD students -->
   <div class="team-section">
