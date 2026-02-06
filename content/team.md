@@ -101,7 +101,7 @@ draft: false
 
       <div class="col-sm-6 col-md-4">
         <div class="team-card text-center">
-          <img class="team-avatar" src="/img/team/taesoo.webp" alt="Jiaxing Zhao">
+          <img class="team-avatar" src="/img/team/person.webp" alt="Jiaxing Zhao">
           <div class="team-name">Dr. Jiaxing Zhao</div>
           <div class="team-links">
             <a href="mailto:jzhao@itp.uni-frankfurt.de">jzhao@itp.uni-frankfurt.de</a>
