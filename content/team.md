@@ -98,34 +98,39 @@ draft: false
         </div>
       </div>
 
-      <!-- NEW postdoc -->
-      <div class="col-sm-6 col-md-4">
-        <div class="team-card text-center">
-          <img class="team-avatar" src="/img/team/person.webp" alt="Jiaxing Zhou">
-          <div class="team-name">Dr. Jiaxing Zhou</div>
-          <div class="team-links">
-            <a href="mailto:jzhao@itp.uni-frankfurt.de">jzhao@itp.uni-frankfurt.de</a>
-          </div>
-        </div>
+     <!-- NEW postdoc -->
+  <div class="col-sm-6 col-md-4">
+    <div class="team-card text-center">
+      <img class="team-avatar" src="/img/team/person.webp" alt="Jiaxing Zhao">
+      <div class="team-name">Dr. Jiaxing Zhao</div>
+      <div class="team-links">
+        <a href="mailto:jzhao@itp.uni-frankfurt.de">jzhao@itp.uni-frankfurt.de</a>
+      </div>
+      <div class="team-links" style="margin-top:6px;">
+        <a href="https://inspirehep.net/authors/1615539" target="_blank">Publications</a>
       </div>
     </div>
   </div>
+
 
   <!-- PhD students -->
   <div class="team-section">
     <h2>PhD students</h2>
 
-    <div class="row">
-      <div class="col-sm-6 col-md-4">
-        <div class="team-card text-center">
-          <img class="team-avatar" src="/img/team/adrian.webp" alt="Adrian William Romero Jorge">
-          <div class="team-name">Adrian William Romero Jorge</div>
-          <div class="team-meta">PhD student</div>
-          <div class="team-links" style="margin-top:6px;">
-            <a href="mailto:jorge@itp.uni-frankfurt.de">jorge@itp.uni-frankfurt.de</a>
-          </div>
-        </div>
-      </div>
+    <div class="col-sm-6 col-md-4">
+  <div class="team-card text-center">
+    <img class="team-avatar" src="/img/team/adrian.webp" alt="Adrian William Romero Jorge">
+    <div class="team-name">Adrian William Romero Jorge</div>
+    <div class="team-meta">PhD student</div>
+    <div class="team-links" style="margin-top:6px;">
+      <a href="mailto:jorge@itp.uni-frankfurt.de">jorge@itp.uni-frankfurt.de</a>
+    </div>
+    <div class="team-links" style="margin-top:6px;">
+      <a href="https://inspirehep.net/authors/2540791" target="_blank">Publications</a>
+    </div>
+  </div>
+</div>
+
 
       <div class="col-sm-6 col-md-4">
         <div class="team-card text-center">
