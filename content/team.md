@@ -67,7 +67,7 @@ draft: false
           <div class="team-role">Group leader</div>
           <div class="team-meta">
             GSI Helmholtzzentrum für Schwerionenforschung GmbH, Planckstrasse 1, 64291 Darmstadt, Germany<br>
-            +49-6159-71 2753 · Office: KBW 2.08
+            Office: KBW 2.08
           </div>
           <div class="team-links" style="margin-top:10px;">
             <a href="mailto:e.bratkovskaya@gsi.de">e.bratkovskaya@gsi.de</a>
