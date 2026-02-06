@@ -99,18 +99,7 @@ draft: false
         </div>
       </div>
 
-      <div class="col-sm-6 col-md-4">
-        <div class="team-card text-center">
-          <img class="team-avatar" src="/img/team/person.webp" alt="Gabriele Coci">
-          <div class="team-name">Dr. Gabriele Coci</div>
-          <div class="team-links">
-            <a href="mailto:gcoci@itp.uni-frankfurt.de">gcoci@itp.uni-frankfurt.de</a>
-          </div>
-          <div class="team-links" style="margin-top:6px;">
-            <a href="https://inspirehep.net/authors/1718277" target="_blank">Publications</a>
-          </div>
-        </div>
-      </div>
+
 
       <!-- NEW postdoc -->
       <div class="col-sm-6 col-md-4">
@@ -130,32 +119,6 @@ draft: false
   <div class="team-section">
     <h2>PhD students</h2>
 
-    <div class="row">
-      <div class="col-sm-6 col-md-4">
-        <div class="team-card text-center">
-          <img class="team-avatar" src="/img/team/person.webp" alt="Olga Soloveva">
-          <div class="team-name">Olga Soloveva</div>
-          <div class="team-links">
-            <a href="mailto:soloveva@itp.uni-frankfurt.de">soloveva@itp.uni-frankfurt.de</a>
-          </div>
-          <div class="team-links" style="margin-top:6px;">
-            <a href="https://inspirehep.net/authors/1905851" target="_blank">Publications</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-6 col-md-4">
-        <div class="team-card text-center">
-          <img class="team-avatar" src="/img/team/person.webp" alt="Ilia Grishmanovskii">
-          <div class="team-name">Ilia Grishmanovskii</div>
-          <div class="team-links">
-            <a href="mailto:grishm@itp.uni-frankfurt.de">grishm@itp.uni-frankfurt.de</a>
-          </div>
-          <div class="team-links" style="margin-top:6px;">
-            <a href="https://inspirehep.net/authors/1914555" target="_blank">Publications</a>
-          </div>
-        </div>
-      </div>
 
       <!-- NEW PhD student -->
       <div class="col-sm-6 col-md-4">
@@ -189,6 +152,9 @@ draft: false
   <div class="team-section">
     <h2>Former group members</h2>
     <ul>
+      <li><a href="https://inspirehep.net/authors/1914555" target="_blank">Dr. Ilia Grishmanovskii</a></li>
+      <li><a href="https://inspirehep.net/authors/1905851" target="_blank">Dr. Olga Soloveva</a></li>
+      <li><a href="https://inspirehep.net/authors/1718277" target="_blank">Dr. Gabriele Cocci</a></li>
       <li><a href="https://inspirehep.net/authors/1512235" target="_blank">Dr. Lucia Oliva</a></li>
       <li><a href="https://inspirehep.net/authors/1410711" target="_blank">Dr. Pierre Moreau</a></li>
       <li><a href="https://inspirehep.net/authors/1273504" target="_blank">Dr. Andrej Ilner</a></li>
