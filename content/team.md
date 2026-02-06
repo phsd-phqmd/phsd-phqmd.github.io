@@ -21,10 +21,7 @@ draft: false
     transition: transform .12s ease, box-shadow .12s ease;
     min-height: 210px;
   }
-  .team-card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 10px 28px rgba(0,0,0,.10);
-  }
+  .team-card:hover { transform: translateY(-2px); box-shadow: 0 10px 28px rgba(0,0,0,.10); }
 
   .team-avatar {
     width: 92px; height: 92px;
@@ -53,7 +50,6 @@ draft: false
 
 <div class="team-page">
 
-  <!-- Group leader -->
   <div class="team-section">
     <h2>Group leader</h2>
 
@@ -79,7 +75,6 @@ draft: false
     </div>
   </div>
 
-  <!-- Postdocs -->
   <div class="team-section">
     <h2>Postdocs</h2>
     <p class="team-subtle">Current postdoctoral researchers contributing to the PHSD/PHQMD programme.</p>
@@ -98,7 +93,6 @@ draft: false
         </div>
       </div>
 
-      <!-- NEW postdoc -->
       <div class="col-sm-6 col-md-4">
         <div class="team-card text-center">
           <img class="team-avatar" src="/img/team/person.webp" alt="Jiaxing Zhou">
@@ -111,14 +105,13 @@ draft: false
           </div>
         </div>
       </div>
-    </div> <!-- ✅ cierre correcto del .row de Postdocs -->
+    </div>
   </div>
 
-  <!-- PhD students -->
   <div class="team-section">
     <h2>PhD students</h2>
 
-    <div class="row"> <!-- ✅ faltaba abrir row aquí -->
+    <div class="row">
       <div class="col-sm-6 col-md-4">
         <div class="team-card text-center">
           <img class="team-avatar" src="/img/team/adrian.webp" alt="Adrian William Romero Jorge">
@@ -146,10 +139,9 @@ draft: false
           </div>
         </div>
       </div>
-    </div> <!-- ✅ cierre correcto del row de PhD -->
+    </div>
   </div>
 
-  <!-- Former group members -->
   <div class="team-section">
     <h2>Former group members</h2>
     <ul>
@@ -170,7 +162,6 @@ draft: false
     </ul>
   </div>
 
-  <!-- Active external collaborations -->
   <div class="team-section">
     <h2>Active external collaborations</h2>
 
@@ -201,7 +192,6 @@ draft: false
     </div>
   </div>
 
-  <!-- SUBATECH -->
   <div class="team-section">
     <h2>Group at SUBATECH, Nantes University, France</h2>
 
