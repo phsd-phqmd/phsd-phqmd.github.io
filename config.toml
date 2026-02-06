@@ -1,12 +1,7 @@
-baseurl = "https://phsd-phqmd.github.io/"
-title = "Parton-Hadron-String Dymanics"
-# canonifyurls  = true
-
+baseURL = "https://phsd-phqmd.github.io/"
+title = "Parton-Hadron-String Dynamics"
 DefaultContentLanguage = "en"
 theme = "beautifulhugo"
-# metaDataFormat = "yaml"
-# pygmentsUseClasses = true
-# pygmentCodeFences = true
 
 [markup]
   [markup.goldmark]
@@ -15,35 +10,32 @@ theme = "beautifulhugo"
 
 [Params]
   subtitle = "A microscopic off-shell transport approach for Heavy-Ion Collisions"
-  logo = "img/logo.ico"
-  favicon = "img/favicon.ico"
+  logo = "/img/logo.ico"
+  favicon = "/img/logo.ico"
   dateFormat = "October 19, 2021"
   custom_css = ["css/custom.css"]
-  # custom_js = ["js/custom.js"]
-  # commit = false
-  # comments = true
 
 [[menu.main]]
   name = "About"
-  url = "about"
+  url = "/about/"
   weight = 1
 
 [[menu.main]]
   name = "Download Code"
-  url = "code"
+  url = "/code/"
   weight = 2
 
 [[menu.main]]
   name = "Publications"
-  url = "publications"
-  weight = 4
+  url = "/publications/"
+  weight = 3
 
 [[menu.main]]
   name = "Talks"
-  url = "talks"
+  url = "/talks/"
   weight = 4
 
 [[menu.main]]
   name = "Team"
-  url = "team"
+  url = "/team/"
   weight = 5
