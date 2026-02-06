@@ -8,7 +8,6 @@ draft: false
 
 {{< rawhtml >}}
 <style>
-  /* scope solo para esta página */
   .code-form-wrap { max-width: 900px; margin: 24px auto 10px; }
   .code-form-wrap .panel { border-radius: 10px; }
   .code-form-wrap .panel-heading { border-top-left-radius: 10px; border-top-right-radius: 10px; }
@@ -79,8 +78,16 @@ draft: false
 
           <div class="col-sm-6">
             <div class="form-group">
-              <label class="control-label">Street, Postal code</label>
-              <input type="text" class="form-control" name="$address" placeholder="Street, Postal code">
+              <label class="control-label">Status <span class="req">*</span></label>
+              <select class="form-control" name="$status" required>
+                <option value="" disabled selected hidden>Please, select</option>
+                <option value="Student">Student</option>
+                <option value="PhD student">PhD student</option>
+                <option value="Postdoc">Postdoc</option>
+                <option value="Professor">Professor</option>
+                <option value="Staff/Engineer">Staff/Engineer</option>
+                <option value="Other">Other</option>
+              </select>
             </div>
           </div>
         </div>
