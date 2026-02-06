@@ -118,8 +118,8 @@ draft: false
     <div class="row">
       <div class="col-sm-6 col-md-4">
         <div class="team-card text-center">
-          <img class="team-avatar" src="/img/team/adrian.jpg" alt="Adrian Romero">
-          <div class="team-name">Adrian Romero</div>
+          <img class="team-avatar" src="/img/team/adrian.webp" alt="Adrian William Romero Jorge">
+          <div class="team-name">Adrian William Romero Jorge</div>
           <div class="team-meta">PhD student</div>
           <div class="team-links" style="margin-top:6px;">
             <a href="mailto:jorge@itp.uni-frankfurt.de">jorge@itp.uni-frankfurt.de</a>
