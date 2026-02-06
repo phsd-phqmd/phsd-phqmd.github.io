@@ -39,7 +39,6 @@ draft: false
   .team-role { color: #555; margin-bottom: 6px; }
   .team-meta { color: #666; font-size: 13px; line-height: 1.35; }
   .team-links a { display: inline-block; margin-right: 10px; font-size: 13px; }
-  .team-divider { height: 1px; background: rgba(0,0,0,.08); margin: 18px 0; }
 
   /* Leader layout */
   .leader-card { padding: 22px 18px; }
@@ -99,15 +98,13 @@ draft: false
         </div>
       </div>
 
-
-
       <!-- NEW postdoc -->
       <div class="col-sm-6 col-md-4">
         <div class="team-card text-center">
           <img class="team-avatar" src="/img/team/person.webp" alt="Jiaxing Zhou">
           <div class="team-name">Dr. Jiaxing Zhou</div>
           <div class="team-links">
-            <a href="mailto:jzhao@itp.uni-frankfurt.de ">jzhao@itp.uni-frankfurt.de </a>
+            <a href="mailto:jzhao@itp.uni-frankfurt.de">jzhao@itp.uni-frankfurt.de</a>
           </div>
         </div>
       </div>
@@ -118,11 +115,10 @@ draft: false
   <div class="team-section">
     <h2>PhD students</h2>
 
-
-      <!-- NEW PhD student -->
+    <div class="row">
       <div class="col-sm-6 col-md-4">
         <div class="team-card text-center">
-          <img class="team-avatar" src="/img/team/person.webp" alt="Adrian William Romero Jorge">
+          <img class="team-avatar" src="/img/teamperson.webp" alt="Adrian Romero">
           <div class="team-name">Adrian Romero</div>
           <div class="team-meta">PhD student</div>
           <div class="team-links" style="margin-top:6px;">
@@ -131,7 +127,6 @@ draft: false
         </div>
       </div>
 
-      <!-- NEW PhD student -->
       <div class="col-sm-6 col-md-4">
         <div class="team-card text-center">
           <img class="team-avatar" src="/img/team/person.webp" alt="Gaia Ingrosso">
@@ -139,7 +134,7 @@ draft: false
           <div class="team-meta">PhD student</div>
           <div class="team-links" style="margin-top:6px;">
             <a href="mailto:ingrosso@itp.uni-frankfurt.de">ingrosso@itp.uni-frankfurt.de</a>
-          </div>     
+          </div>
         </div>
       </div>
     </div>
@@ -151,7 +146,7 @@ draft: false
     <ul>
       <li><a href="https://inspirehep.net/authors/1914555" target="_blank">Dr. Ilia Grishmanovskii</a></li>
       <li><a href="https://inspirehep.net/authors/1905851" target="_blank">Dr. Olga Soloveva</a></li>
-      <li><a href="https://inspirehep.net/authors/1718277" target="_blank">Dr. Gabriele Cocci</a></li>
+      <li><a href="https://inspirehep.net/authors/1718277" target="_blank">Dr. Gabriele Coci</a></li>
       <li><a href="https://inspirehep.net/authors/1512235" target="_blank">Dr. Lucia Oliva</a></li>
       <li><a href="https://inspirehep.net/authors/1410711" target="_blank">Dr. Pierre Moreau</a></li>
       <li><a href="https://inspirehep.net/authors/1273504" target="_blank">Dr. Andrej Ilner</a></li>
