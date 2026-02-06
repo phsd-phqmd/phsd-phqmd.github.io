@@ -3,144 +3,254 @@ title: "Team"
 draft: false
 ---
 
-# Group leader
----
+{{< rawhtml >}}
+<style>
+  /* Modern Team cards (scoped) */
+  .team-page { max-width: 1100px; margin: 0 auto; }
+  .team-section { margin: 28px 0 10px; }
+  .team-section h2 { margin: 0 0 16px; font-weight: 700; letter-spacing: .2px; }
+  .team-subtle { color: #666; margin-top: -8px; margin-bottom: 18px; }
 
-<div class="row">
-<div class="col-lg-12 col-md-12 text-center">
-  <div class="text-cente">
-    <div class="">
-      <!-- <img src="/img/team/bratkovskaya.jpg" style="max-height:200px" class="" alt=""> -->
-      <img src="/img/team/person.webp" alt="Elena Bratkovskaya">
-    </div>
-      <div class="text-cente">
-        <h4>Apl. Prof. Dr. Elena Bratkovskaya</h4>
-        <div>GSI Helmholtzzentrum für Schwerionenforschung GmbH, Planckstrasse 1, 64291, Darmstadt, Germany</div>
-          <div class="">+49-6159-71 2753</div>
-          <div class=""><a href="mailto:e.bratkovskaya@gsi.de">e.bratkovskaya@gsi.de</a></div>
-          <div class=""><a href="https://inspirehep.net/authors/1015408" target="_blank">Publications</a></div>
-          <div class=""><a href="http://th.physik.uni-frankfurt.de/~brat/index.html">Personal web-page</a></div>
-          <div class="">Office: KBW 2.08</div>
-      </div>
-  </div>
-</div>
-</div>
+  .team-card {
+    background: #fff;
+    border: 1px solid rgba(0,0,0,.08);
+    border-radius: 12px;
+    padding: 18px 16px;
+    margin-bottom: 18px;
+    box-shadow: 0 6px 18px rgba(0,0,0,.06);
+    transition: transform .12s ease, box-shadow .12s ease;
+    min-height: 210px;
+  }
+  .team-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 28px rgba(0,0,0,.10);
+  }
 
-# Postdocs
----
+  .team-avatar {
+    width: 92px; height: 92px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid rgba(0,0,0,.06);
+    margin: 2px auto 10px;
+    display: block;
+  }
 
-<div class="row">
-  <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-    <div class="text-center">
-      <img src="/img/team/person.webp" alt="Taesoo Song">
-    </div>
-      <div class="text-center">
-        <h4>Dr. Taesoo Song</h4>
-        <!-- <div>+49-69-798-47690</div> -->
-        <a href="mailto:song@fias.uni-frankfurt.de">song@fias.uni-frankfurt.de</a>
-        <div><a href="https://inspirehep.net/authors/1047681" target="_blank">Publications</a></div>
-      </div>
-  </div>
+  .team-name { margin: 6px 0 6px; font-weight: 700; font-size: 18px; }
+  .team-role { color: #555; margin-bottom: 6px; }
+  .team-meta { color: #666; font-size: 13px; line-height: 1.35; }
+  .team-links a { display: inline-block; margin-right: 10px; font-size: 13px; }
+  .team-divider { height: 1px; background: rgba(0,0,0,.08); margin: 18px 0; }
 
-  <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-    <div class="">
-      <img src="/img/team/person.webp" alt="Gabriele Coci">
-    </div>
-      <div class="text-center">
-        <h4>Dr. Gabriele Coci</h4>
-        <!-- <div>+49-69-798-47689</div> -->
-        <a href="mailto:gcoci@itp.uni-frankfurt.de">gcoci@itp.uni-frankfurt.de</a>
-        <div><a href="https://inspirehep.net/authors/1718277" target="_blank">Publications</a></div>
-      </div>
-  </div>
-</div>
+  /* Leader layout */
+  .leader-card { padding: 22px 18px; }
+  .leader-grid { display: table; width: 100%; }
+  .leader-left { display: table-cell; width: 140px; vertical-align: top; }
+  .leader-right { display: table-cell; vertical-align: top; padding-left: 14px; }
+  @media (max-width: 768px) {
+    .leader-grid, .leader-left, .leader-right { display: block; width: 100%; padding: 0; }
+    .leader-right { padding-top: 10px; }
+  }
+</style>
 
-# PhD students
----
+<div class="team-page">
 
-<div class="row">
-  <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-    <div class="text-center">
-      <img src="/img/team/person.webp" alt="Olga Soloveva">
-    </div>
-      <div class="text-center">
-        <h4>Olga Soloveva</h4>
-        <!-- <div>+49-69-798-47689</div> -->
-        <a href="mailto:soloveva@itp.uni-frankfurt.de">soloveva@itp.uni-frankfurt.de</a>
-        <div><a href="https://inspirehep.net/authors/1905851" target="_blank">Publications</a></div>
-      </div>
-  </div>
+  <!-- Group leader -->
+  <div class="team-section">
+    <h2>Group leader</h2>
 
-  <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-    <div class="">
-      <img src="/img/team/person.webp" alt="Ilia Grishmanovskii">
-    </div>
-      <div class="text-center">
-        <h4>Ilia Grishmanovskii</h4>
-        <!-- <div>+49-17-083-57045</div> -->
-        <a href="mailto:grishm@itp.uni-frankfurt.de">grishm@itp.uni-frankfurt.de</a>
-        <div><a href="https://inspirehep.net/authors/1914555" target="_blank">Publications</a></div>
-      </div>
-  </div>
-</div>
-
-# Former group members
----
-
-- [Dr. Lucia Oliva](https://inspirehep.net/authors/1512235)
-- [Dr. Pierre Moreau](https://inspirehep.net/authors/1410711)
-- [Dr. Andrej Ilner](https://inspirehep.net/authors/1273504)
-- [Dr. Daniel Cabrera](https://inspirehep.net/authors/1014794)
-- [Dr. Hamza Berrehrah](https://inspirehep.net/authors/1273379)
-- [Dr. Vitalii Ozvenchuk](https://inspirehep.net/authors/1259121)
-- [Dr. Rudy Marty](https://inspirehep.net/authors/1237817)
-- [PD Dr. Olena Linnyk](https://inspirehep.net/authors/1019295)
-- [Dr. Volodymir Konchakovski](https://inspirehep.net/authors/1036687)
-- [Dr. Michael Hauer](https://inspirehep.net/authors/1032763)
-- [Prof. Dr. Laura Tolos](https://inspirehep.net/authors/985964)
-
-
-# Active external collaborations
----
-
-<div class="row">
-  <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-      <div class="text-center">
-        <img src="/img/team/person.webp" alt="Vadim Voronyuk">
-      </div>
-        <div class="text-center">
-          <h4>Dr. Vadim Voronyuk</h4>
-          <div>Joint Institute for Nuclear Research Laboratory for Information Technologies, RU-141980, Dubna</div>
-          <a href="mailto:vadim.voronyuk@jinr.ru">vadim.voronyuk@jinr.ru</a>
-          <div><a href="https://inspirehep.net/authors/1074531" target="_blank">Publications</a></div>
+    <div class="team-card leader-card">
+      <div class="leader-grid">
+        <div class="leader-left text-center">
+          <img class="team-avatar" src="/img/team/person.webp" alt="Elena Bratkovskaya">
         </div>
-  </div>
-
-  <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-      <div class="">
-        <img src="/img/team/person.webp" alt="Wolfgang Cassing">
-      </div>
-        <div class="text-center">
-          <h4>Prof. Dr. Dr. Wolfgang Cassing</h4>
-          <div>Institut für Theoretische Physik I, Heinrich-Buff-Ring 16, 35392, Gießen, Germany</div>
-          <a href="mailto:wolfgang.cassing@theo.physik.uni-giessen.de">wolfgang.cassing@theo.physik.uni-giessen.de</a>
-          <div><a href="https://inspirehep.net/authors/1014319" target="_blank">Publications</a></div>
+        <div class="leader-right">
+          <div class="team-name">Apl. Prof. Dr. Elena Bratkovskaya</div>
+          <div class="team-role">Group leader</div>
+          <div class="team-meta">
+            GSI Helmholtzzentrum für Schwerionenforschung GmbH, Planckstrasse 1, 64291 Darmstadt, Germany<br>
+            +49-6159-71 2753 · Office: KBW 2.08
+          </div>
+          <div class="team-links" style="margin-top:10px;">
+            <a href="mailto:e.bratkovskaya@gsi.de">e.bratkovskaya@gsi.de</a>
+            <a href="https://inspirehep.net/authors/1015408" target="_blank">Publications</a>
+            <a href="http://th.physik.uni-frankfurt.de/~brat/index.html" target="_blank">Personal web-page</a>
+          </div>
         </div>
-  </div>
-</div>
-
-# Group at SUBATECH, Nantes Uni., France
----
-
-<div class="row">
-  <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-      <div class="text-center">
-        <img src="/img/team/person.webp" alt="Jörg Aichelin">
       </div>
-        <div class="text-center">
-          <h4>Prof. Dr. Jörg Aichelin</h4>
-          <a href="mailto:aichelin@subatech.in2p3.fr">aichelin@subatech.in2p3.fr</a>
-          <div><a href="https://inspirehep.net/authors/1018831" target="_blank">Publications</a></div>
-        </div>
+    </div>
   </div>
+
+  <!-- Postdocs -->
+  <div class="team-section">
+    <h2>Postdocs</h2>
+    <p class="team-subtle">Current postdoctoral researchers contributing to the PHSD/PHQMD programme.</p>
+
+    <div class="row">
+      <div class="col-sm-6 col-md-4">
+        <div class="team-card text-center">
+          <img class="team-avatar" src="/img/team/person.webp" alt="Taesoo Song">
+          <div class="team-name">Dr. Taesoo Song</div>
+          <div class="team-links">
+            <a href="mailto:song@fias.uni-frankfurt.de">song@fias.uni-frankfurt.de</a>
+          </div>
+          <div class="team-links" style="margin-top:6px;">
+            <a href="https://inspirehep.net/authors/1047681" target="_blank">Publications</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4">
+        <div class="team-card text-center">
+          <img class="team-avatar" src="/img/team/person.webp" alt="Gabriele Coci">
+          <div class="team-name">Dr. Gabriele Coci</div>
+          <div class="team-links">
+            <a href="mailto:gcoci@itp.uni-frankfurt.de">gcoci@itp.uni-frankfurt.de</a>
+          </div>
+          <div class="team-links" style="margin-top:6px;">
+            <a href="https://inspirehep.net/authors/1718277" target="_blank">Publications</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- NEW postdoc -->
+      <div class="col-sm-6 col-md-4">
+        <div class="team-card text-center">
+          <img class="team-avatar" src="/img/team/person.webp" alt="Jiaxing Zhou">
+          <div class="team-name">Dr. Jiaxing Zhou</div>
+          <div class="team-links">
+            <a href="mailto:jiaxing.zhou@uni-frankfurt.de">jiaxing.zhou@uni-frankfurt.de</a>
+          </div>
+          <div class="team-meta" style="margin-top:6px;">(email/link can be updated)</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PhD students -->
+  <div class="team-section">
+    <h2>PhD students</h2>
+
+    <div class="row">
+      <div class="col-sm-6 col-md-4">
+        <div class="team-card text-center">
+          <img class="team-avatar" src="/img/team/person.webp" alt="Olga Soloveva">
+          <div class="team-name">Olga Soloveva</div>
+          <div class="team-links">
+            <a href="mailto:soloveva@itp.uni-frankfurt.de">soloveva@itp.uni-frankfurt.de</a>
+          </div>
+          <div class="team-links" style="margin-top:6px;">
+            <a href="https://inspirehep.net/authors/1905851" target="_blank">Publications</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4">
+        <div class="team-card text-center">
+          <img class="team-avatar" src="/img/team/person.webp" alt="Ilia Grishmanovskii">
+          <div class="team-name">Ilia Grishmanovskii</div>
+          <div class="team-links">
+            <a href="mailto:grishm@itp.uni-frankfurt.de">grishm@itp.uni-frankfurt.de</a>
+          </div>
+          <div class="team-links" style="margin-top:6px;">
+            <a href="https://inspirehep.net/authors/1914555" target="_blank">Publications</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- NEW PhD student -->
+      <div class="col-sm-6 col-md-4">
+        <div class="team-card text-center">
+          <img class="team-avatar" src="/img/team/person.webp" alt="Adrian Romero">
+          <div class="team-name">Adrian Romero</div>
+          <div class="team-meta">PhD student</div>
+          <div class="team-links" style="margin-top:6px;">
+            <a href="mailto:adrian.romero@uni-frankfurt.de">adrian.romero@uni-frankfurt.de</a>
+          </div>
+          <div class="team-meta" style="margin-top:6px;">(email/link can be updated)</div>
+        </div>
+      </div>
+
+      <!-- NEW PhD student -->
+      <div class="col-sm-6 col-md-4">
+        <div class="team-card text-center">
+          <img class="team-avatar" src="/img/team/person.webp" alt="Gaia Ingrosso">
+          <div class="team-name">Gaia Ingrosso</div>
+          <div class="team-meta">PhD student</div>
+          <div class="team-links" style="margin-top:6px;">
+            <a href="mailto:gaia.ingrosso@uni-frankfurt.de">gaia.ingrosso@uni-frankfurt.de</a>
+          </div>
+          <div class="team-meta" style="margin-top:6px;">(email/link can be updated)</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Former group members -->
+  <div class="team-section">
+    <h2>Former group members</h2>
+    <ul>
+      <li><a href="https://inspirehep.net/authors/1512235" target="_blank">Dr. Lucia Oliva</a></li>
+      <li><a href="https://inspirehep.net/authors/1410711" target="_blank">Dr. Pierre Moreau</a></li>
+      <li><a href="https://inspirehep.net/authors/1273504" target="_blank">Dr. Andrej Ilner</a></li>
+      <li><a href="https://inspirehep.net/authors/1014794" target="_blank">Dr. Daniel Cabrera</a></li>
+      <li><a href="https://inspirehep.net/authors/1273379" target="_blank">Dr. Hamza Berrehrah</a></li>
+      <li><a href="https://inspirehep.net/authors/1259121" target="_blank">Dr. Vitalii Ozvenchuk</a></li>
+      <li><a href="https://inspirehep.net/authors/1237817" target="_blank">Dr. Rudy Marty</a></li>
+      <li><a href="https://inspirehep.net/authors/1019295" target="_blank">PD Dr. Olena Linnyk</a></li>
+      <li><a href="https://inspirehep.net/authors/1036687" target="_blank">Dr. Volodymir Konchakovski</a></li>
+      <li><a href="https://inspirehep.net/authors/1032763" target="_blank">Dr. Michael Hauer</a></li>
+      <li><a href="https://inspirehep.net/authors/985964" target="_blank">Prof. Dr. Laura Tolos</a></li>
+    </ul>
+  </div>
+
+  <!-- Active external collaborations -->
+  <div class="team-section">
+    <h2>Active external collaborations</h2>
+
+    <div class="row">
+      <div class="col-sm-6 col-md-4">
+        <div class="team-card text-center">
+          <img class="team-avatar" src="/img/team/person.webp" alt="Vadim Voronyuk">
+          <div class="team-name">Dr. Vadim Voronyuk</div>
+          <div class="team-meta">JINR Laboratory for Information Technologies, RU-141980 Dubna</div>
+          <div class="team-links" style="margin-top:8px;">
+            <a href="mailto:vadim.voronyuk@jinr.ru">vadim.voronyuk@jinr.ru</a>
+            <a href="https://inspirehep.net/authors/1074531" target="_blank">Publications</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4">
+        <div class="team-card text-center">
+          <img class="team-avatar" src="/img/team/person.webp" alt="Wolfgang Cassing">
+          <div class="team-name">Prof. Dr. Dr. Wolfgang Cassing</div>
+          <div class="team-meta">Institut für Theoretische Physik I, Heinrich-Buff-Ring 16, 35392 Gießen, Germany</div>
+          <div class="team-links" style="margin-top:8px;">
+            <a href="mailto:wolfgang.cassing@theo.physik.uni-giessen.de">wolfgang.cassing@theo.physik.uni-giessen.de</a>
+            <a href="https://inspirehep.net/authors/1014319" target="_blank">Publications</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SUBATECH -->
+  <div class="team-section">
+    <h2>Group at SUBATECH, Nantes University, France</h2>
+
+    <div class="row">
+      <div class="col-sm-6 col-md-4">
+        <div class="team-card text-center">
+          <img class="team-avatar" src="/img/team/person.webp" alt="Jörg Aichelin">
+          <div class="team-name">Prof. Dr. Jörg Aichelin</div>
+          <div class="team-links">
+            <a href="mailto:aichelin@subatech.in2p3.fr">aichelin@subatech.in2p3.fr</a>
+            <a href="https://inspirehep.net/authors/1018831" target="_blank" style="margin-left:10px;">Publications</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </div>
+{{< /rawhtml >}}
