@@ -1,6 +1,6 @@
 ![Build Status](https://github.com/phsd/phsd.github.io/badges/master/pipeline.svg)
 
-[phsd.github.io](http://phsd.github.io)
+[phsd-phqmd.github.io](http://phsd-phqmd.github.io)
 ---
 ## Building locally
 
