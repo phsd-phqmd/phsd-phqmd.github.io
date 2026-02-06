@@ -27,8 +27,8 @@ draft: false
   }
 
   .team-avatar {
-    width: 120px;
-    height: 120px;
+    width: 140px;
+    height: 140px;
     border-radius: 50%;
     object-fit: cover;
     border: 4px solid rgba(0,0,0,.08);
@@ -61,7 +61,7 @@ draft: false
     <div class="team-card leader-card">
       <div class="leader-grid">
         <div class="leader-left text-center">
-          <img class="team-avatar" src="/img/team/person.webp" alt="Elena Bratkovskaya">
+          <img class="team-avatar" src="/img/team/elena.webp" alt="Elena Bratkovskaya">
         </div>
         <div class="leader-right">
           <div class="team-name">Apl. Prof. Dr. Elena Bratkovskaya</div>
@@ -88,7 +88,7 @@ draft: false
     <div class="row">
       <div class="col-sm-6 col-md-4">
         <div class="team-card text-center">
-          <img class="team-avatar" src="/img/team/person.webp" alt="Taesoo Song">
+          <img class="team-avatar" src="/img/team/taesoo.webp" alt="Taesoo Song">
           <div class="team-name">Dr. Taesoo Song</div>
           <div class="team-links">
             <a href="mailto:song@fias.uni-frankfurt.de">song@fias.uni-frankfurt.de</a>
@@ -102,8 +102,8 @@ draft: false
       <!-- NEW postdoc -->
       <div class="col-sm-6 col-md-4">
         <div class="team-card text-center">
-          <img class="team-avatar" src="/img/team/person.webp" alt="Jiaxing Zhou">
-          <div class="team-name">Dr. Jiaxing Zhou</div>
+          <img class="team-avatar" src="/img/team/person.webp" alt="Jiaxing Zhau">
+          <div class="team-name">Dr. Jiaxing Zhau</div>
           <div class="team-links">
             <a href="mailto:jzhao@itp.uni-frankfurt.de">jzhao@itp.uni-frankfurt.de</a>
           </div>
@@ -119,7 +119,7 @@ draft: false
     <div class="row">
       <div class="col-sm-6 col-md-4">
         <div class="team-card text-center">
-          <img class="team-avatar" src="/img/teamperson.webp" alt="Adrian Romero">
+          <img class="team-avatar" src="/img/team/adrian.webp" alt="Adrian Romero">
           <div class="team-name">Adrian Romero</div>
           <div class="team-meta">PhD student</div>
           <div class="team-links" style="margin-top:6px;">
@@ -169,7 +169,7 @@ draft: false
     <div class="row">
       <div class="col-sm-6 col-md-4">
         <div class="team-card text-center">
-          <img class="team-avatar" src="/img/team/person.webp" alt="Vadim Voronyuk">
+          <img class="team-avatar" src="/img/team/vadym.webp" alt="Vadim Voronyuk">
           <div class="team-name">Dr. Vadim Voronyuk</div>
           <div class="team-meta">JINR Laboratory for Information Technologies, RU-141980 Dubna</div>
           <div class="team-links" style="margin-top:8px;">
@@ -200,7 +200,7 @@ draft: false
     <div class="row">
       <div class="col-sm-6 col-md-4">
         <div class="team-card text-center">
-          <img class="team-avatar" src="/img/team/person.webp" alt="Jörg Aichelin">
+          <img class="team-avatar" src="/img/team/jorg.webp" alt="Jörg Aichelin">
           <div class="team-name">Prof. Dr. Jörg Aichelin</div>
           <div class="team-links">
             <a href="mailto:aichelin@subatech.in2p3.fr">aichelin@subatech.in2p3.fr</a>
