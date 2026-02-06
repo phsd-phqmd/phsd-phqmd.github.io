@@ -27,11 +27,12 @@ draft: false
   }
 
   .team-avatar {
-    width: 92px; height: 92px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid rgba(0,0,0,.06);
-    margin: 2px auto 10px;
+    border: 4px solid rgba(0,0,0,.08);
+    margin: 2px auto 12px;
     display: block;
   }
 
