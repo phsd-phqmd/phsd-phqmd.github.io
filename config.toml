@@ -1,4 +1,4 @@
-baseurl = "https://phsd.github.io/"
+baseurl = "https://phsd-phqmd.github.io/"
 title = "Parton-Hadron-String Dymanics"
 # canonifyurls  = true
 
@@ -15,7 +15,7 @@ theme = "beautifulhugo"
 
 [Params]
   subtitle = "A microscopic off-shell transport approach for Heavy-Ion Collisions"
-  logo = "img/logo.png"
+  logo = "img/logo.ico"
   favicon = "img/favicon.ico"
   dateFormat = "October 19, 2021"
   custom_css = ["css/custom.css"]
@@ -29,7 +29,7 @@ theme = "beautifulhugo"
   weight = 1
 
 [[menu.main]]
-  name = "Code"
+  name = "Download Code"
   url = "code"
   weight = 2
 
