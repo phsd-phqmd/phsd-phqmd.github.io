@@ -21,7 +21,10 @@ draft: false
     transition: transform .12s ease, box-shadow .12s ease;
     min-height: 210px;
   }
-  .team-card:hover { transform: translateY(-2px); box-shadow: 0 10px 28px rgba(0,0,0,.10); }
+  .team-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 28px rgba(0,0,0,.10);
+  }
 
   .team-avatar {
     width: 92px; height: 92px;
@@ -50,20 +53,21 @@ draft: false
 
 <div class="team-page">
 
+  <!-- Group leader -->
   <div class="team-section">
     <h2>Group leader</h2>
 
     <div class="team-card leader-card">
       <div class="leader-grid">
         <div class="leader-left text-center">
-          <img class="team-avatar" src="/img/team/elena.webp" alt="Elena Bratkovskaya">
+          <img class="team-avatar" src="/img/team/person.webp" alt="Elena Bratkovskaya">
         </div>
         <div class="leader-right">
           <div class="team-name">Apl. Prof. Dr. Elena Bratkovskaya</div>
           <div class="team-role">Group leader</div>
           <div class="team-meta">
             GSI Helmholtzzentrum für Schwerionenforschung GmbH, Planckstrasse 1, 64291 Darmstadt, Germany<br>
-            Office: KBW 2.08
+            +49-6159-71 2753 · Office: KBW 2.08
           </div>
           <div class="team-links" style="margin-top:10px;">
             <a href="mailto:e.bratkovskaya@gsi.de">e.bratkovskaya@gsi.de</a>
@@ -75,6 +79,7 @@ draft: false
     </div>
   </div>
 
+  <!-- Postdocs -->
   <div class="team-section">
     <h2>Postdocs</h2>
     <p class="team-subtle">Current postdoctoral researchers contributing to the PHSD/PHQMD programme.</p>
@@ -82,7 +87,7 @@ draft: false
     <div class="row">
       <div class="col-sm-6 col-md-4">
         <div class="team-card text-center">
-          <img class="team-avatar" src="/img/team/taesoo.webp" alt="Taesoo Song">
+          <img class="team-avatar" src="/img/team/person.webp" alt="Taesoo Song">
           <div class="team-name">Dr. Taesoo Song</div>
           <div class="team-links">
             <a href="mailto:song@fias.uni-frankfurt.de">song@fias.uni-frankfurt.de</a>
@@ -93,6 +98,7 @@ draft: false
         </div>
       </div>
 
+      <!-- NEW postdoc -->
       <div class="col-sm-6 col-md-4">
         <div class="team-card text-center">
           <img class="team-avatar" src="/img/team/person.webp" alt="Jiaxing Zhou">
@@ -100,28 +106,23 @@ draft: false
           <div class="team-links">
             <a href="mailto:jzhao@itp.uni-frankfurt.de">jzhao@itp.uni-frankfurt.de</a>
           </div>
-          <div class="team-links" style="margin-top:6px;">
-            <a href="https://inspirehep.net/authors/1615539" target="_blank">Publications</a>
-          </div>
         </div>
       </div>
     </div>
   </div>
 
+  <!-- PhD students -->
   <div class="team-section">
     <h2>PhD students</h2>
 
     <div class="row">
       <div class="col-sm-6 col-md-4">
         <div class="team-card text-center">
-          <img class="team-avatar" src="/img/team/adrian.webp" alt="Adrian William Romero Jorge">
-          <div class="team-name">Adrian William Romero Jorge</div>
+          <img class="team-avatar" src="/img/teamperson.webp" alt="Adrian Romero">
+          <div class="team-name">Adrian Romero</div>
           <div class="team-meta">PhD student</div>
           <div class="team-links" style="margin-top:6px;">
             <a href="mailto:jorge@itp.uni-frankfurt.de">jorge@itp.uni-frankfurt.de</a>
-          </div>
-          <div class="team-links" style="margin-top:6px;">
-            <a href="https://inspirehep.net/authors/2540791" target="_blank">Publications</a>
           </div>
         </div>
       </div>
@@ -134,14 +135,12 @@ draft: false
           <div class="team-links" style="margin-top:6px;">
             <a href="mailto:ingrosso@itp.uni-frankfurt.de">ingrosso@itp.uni-frankfurt.de</a>
           </div>
-          <div class="team-links" style="margin-top:6px;">
-            <a href="REEMPLAZA_AQUI_INSPIRE_GAIA" target="_blank">Publications</a>
-          </div>
         </div>
       </div>
     </div>
   </div>
 
+  <!-- Former group members -->
   <div class="team-section">
     <h2>Former group members</h2>
     <ul>
@@ -162,13 +161,14 @@ draft: false
     </ul>
   </div>
 
+  <!-- Active external collaborations -->
   <div class="team-section">
     <h2>Active external collaborations</h2>
 
     <div class="row">
       <div class="col-sm-6 col-md-4">
         <div class="team-card text-center">
-          <img class="team-avatar" src="/img/team/vadym.webp" alt="Vadim Voronyuk">
+          <img class="team-avatar" src="/img/team/person.webp" alt="Vadim Voronyuk">
           <div class="team-name">Dr. Vadim Voronyuk</div>
           <div class="team-meta">JINR Laboratory for Information Technologies, RU-141980 Dubna</div>
           <div class="team-links" style="margin-top:8px;">
@@ -192,13 +192,14 @@ draft: false
     </div>
   </div>
 
+  <!-- SUBATECH -->
   <div class="team-section">
     <h2>Group at SUBATECH, Nantes University, France</h2>
 
     <div class="row">
       <div class="col-sm-6 col-md-4">
         <div class="team-card text-center">
-          <img class="team-avatar" src="/img/team/jorg.webp" alt="Jörg Aichelin">
+          <img class="team-avatar" src="/img/team/person.webp" alt="Jörg Aichelin">
           <div class="team-name">Prof. Dr. Jörg Aichelin</div>
           <div class="team-links">
             <a href="mailto:aichelin@subatech.in2p3.fr">aichelin@subatech.in2p3.fr</a>
