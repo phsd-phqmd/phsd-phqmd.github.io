@@ -10,7 +10,7 @@ theme = "beautifulhugo"
 
 [Params]
   subtitle = "A microscopic off-shell transport approach for Heavy-Ion Collisions"
-  logo = "img/logo.ico"
+  logo = "img/logo.png"
   favicon = "img/logo.ico"
   dateFormat = "October 19, 2021"
   custom_css = ["css/custom.css"]
