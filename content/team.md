@@ -107,9 +107,8 @@ draft: false
           <img class="team-avatar" src="/img/team/person.webp" alt="Jiaxing Zhou">
           <div class="team-name">Dr. Jiaxing Zhou</div>
           <div class="team-links">
-            <a href="mailto:jiaxing.zhou@uni-frankfurt.de">jiaxing.zhou@uni-frankfurt.de</a>
+            <a href="mailto:jzhao@itp.uni-frankfurt.de ">jzhao@itp.uni-frankfurt.de </a>
           </div>
-          <div class="team-meta" style="margin-top:6px;">(email/link can be updated)</div>
         </div>
       </div>
     </div>
@@ -123,13 +122,12 @@ draft: false
       <!-- NEW PhD student -->
       <div class="col-sm-6 col-md-4">
         <div class="team-card text-center">
-          <img class="team-avatar" src="/img/team/person.webp" alt="Adrian Romero">
+          <img class="team-avatar" src="/img/team/person.webp" alt="Adrian William Romero Jorge">
           <div class="team-name">Adrian Romero</div>
           <div class="team-meta">PhD student</div>
           <div class="team-links" style="margin-top:6px;">
-            <a href="mailto:adrian.romero@uni-frankfurt.de">adrian.romero@uni-frankfurt.de</a>
+            <a href="mailto:jorge@itp.uni-frankfurt.de">jorge@itp.uni-frankfurt.de</a>
           </div>
-          <div class="team-meta" style="margin-top:6px;">(email/link can be updated)</div>
         </div>
       </div>
 
@@ -140,9 +138,8 @@ draft: false
           <div class="team-name">Gaia Ingrosso</div>
           <div class="team-meta">PhD student</div>
           <div class="team-links" style="margin-top:6px;">
-            <a href="mailto:gaia.ingrosso@uni-frankfurt.de">gaia.ingrosso@uni-frankfurt.de</a>
-          </div>
-          <div class="team-meta" style="margin-top:6px;">(email/link can be updated)</div>
+            <a href="mailto:ingrosso@itp.uni-frankfurt.de">ingrosso@itp.uni-frankfurt.de</a>
+          </div>     
         </div>
       </div>
     </div>
