@@ -39,7 +39,6 @@ draft: false
   .team-role { color: #555; margin-bottom: 6px; }
   .team-meta { color: #666; font-size: 13px; line-height: 1.35; }
   .team-links a { display: inline-block; margin-right: 10px; font-size: 13px; }
-  .team-divider { height: 1px; background: rgba(0,0,0,.08); margin: 18px 0; }
 
   /* Leader layout */
   .leader-card { padding: 22px 18px; }
@@ -61,14 +60,14 @@ draft: false
     <div class="team-card leader-card">
       <div class="leader-grid">
         <div class="leader-left text-center">
-          <img class="team-avatar" src="/img/team/person.webp" alt="Elena Bratkovskaya">
+          <img class="team-avatar" src="/img/team/elena.webp" alt="Elena Bratkovskaya">
         </div>
         <div class="leader-right">
           <div class="team-name">Apl. Prof. Dr. Elena Bratkovskaya</div>
           <div class="team-role">Group leader</div>
           <div class="team-meta">
             GSI Helmholtzzentrum für Schwerionenforschung GmbH, Planckstrasse 1, 64291 Darmstadt, Germany<br>
-            +49-6159-71 2753 · Office: KBW 2.08
+            Office: KBW 2.08
           </div>
           <div class="team-links" style="margin-top:10px;">
             <a href="mailto:e.bratkovskaya@gsi.de">e.bratkovskaya@gsi.de</a>
@@ -88,7 +87,7 @@ draft: false
     <div class="row">
       <div class="col-sm-6 col-md-4">
         <div class="team-card text-center">
-          <img class="team-avatar" src="/img/team/person.webp" alt="Taesoo Song">
+          <img class="team-avatar" src="/img/team/taesoo.webp" alt="Taesoo Song">
           <div class="team-name">Dr. Taesoo Song</div>
           <div class="team-links">
             <a href="mailto:song@fias.uni-frankfurt.de">song@fias.uni-frankfurt.de</a>
@@ -99,96 +98,64 @@ draft: false
         </div>
       </div>
 
-      <div class="col-sm-6 col-md-4">
-        <div class="team-card text-center">
-          <img class="team-avatar" src="/img/team/person.webp" alt="Gabriele Coci">
-          <div class="team-name">Dr. Gabriele Coci</div>
-          <div class="team-links">
-            <a href="mailto:gcoci@itp.uni-frankfurt.de">gcoci@itp.uni-frankfurt.de</a>
-          </div>
-          <div class="team-links" style="margin-top:6px;">
-            <a href="https://inspirehep.net/authors/1718277" target="_blank">Publications</a>
-          </div>
-        </div>
-      </div>
-
       <!-- NEW postdoc -->
       <div class="col-sm-6 col-md-4">
         <div class="team-card text-center">
           <img class="team-avatar" src="/img/team/person.webp" alt="Jiaxing Zhou">
           <div class="team-name">Dr. Jiaxing Zhou</div>
           <div class="team-links">
-            <a href="mailto:jiaxing.zhou@uni-frankfurt.de">jiaxing.zhou@uni-frankfurt.de</a>
+            <a href="mailto:jzhao@itp.uni-frankfurt.de">jzhao@itp.uni-frankfurt.de</a>
           </div>
-          <div class="team-meta" style="margin-top:6px;">(email/link can be updated)</div>
+          <div class="team-links" style="margin-top:6px;">
+            <a href="https://inspirehep.net/authors/1615539" target="_blank">Publications</a>
+          </div>
         </div>
       </div>
-    </div>
+    </div> <!-- ✅ cierre correcto del .row de Postdocs -->
   </div>
 
   <!-- PhD students -->
   <div class="team-section">
     <h2>PhD students</h2>
 
-    <div class="row">
+    <div class="row"> <!-- ✅ faltaba abrir row aquí -->
       <div class="col-sm-6 col-md-4">
         <div class="team-card text-center">
-          <img class="team-avatar" src="/img/team/person.webp" alt="Olga Soloveva">
-          <div class="team-name">Olga Soloveva</div>
-          <div class="team-links">
-            <a href="mailto:soloveva@itp.uni-frankfurt.de">soloveva@itp.uni-frankfurt.de</a>
-          </div>
-          <div class="team-links" style="margin-top:6px;">
-            <a href="https://inspirehep.net/authors/1905851" target="_blank">Publications</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-6 col-md-4">
-        <div class="team-card text-center">
-          <img class="team-avatar" src="/img/team/person.webp" alt="Ilia Grishmanovskii">
-          <div class="team-name">Ilia Grishmanovskii</div>
-          <div class="team-links">
-            <a href="mailto:grishm@itp.uni-frankfurt.de">grishm@itp.uni-frankfurt.de</a>
-          </div>
-          <div class="team-links" style="margin-top:6px;">
-            <a href="https://inspirehep.net/authors/1914555" target="_blank">Publications</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- NEW PhD student -->
-      <div class="col-sm-6 col-md-4">
-        <div class="team-card text-center">
-          <img class="team-avatar" src="/img/team/person.webp" alt="Adrian Romero">
-          <div class="team-name">Adrian Romero</div>
+          <img class="team-avatar" src="/img/team/adrian.webp" alt="Adrian William Romero Jorge">
+          <div class="team-name">Adrian William Romero Jorge</div>
           <div class="team-meta">PhD student</div>
           <div class="team-links" style="margin-top:6px;">
-            <a href="mailto:adrian.romero@uni-frankfurt.de">adrian.romero@uni-frankfurt.de</a>
+            <a href="mailto:jorge@itp.uni-frankfurt.de">jorge@itp.uni-frankfurt.de</a>
           </div>
-          <div class="team-meta" style="margin-top:6px;">(email/link can be updated)</div>
+          <div class="team-links" style="margin-top:6px;">
+            <a href="https://inspirehep.net/authors/2540791" target="_blank">Publications</a>
+          </div>
         </div>
       </div>
 
-      <!-- NEW PhD student -->
       <div class="col-sm-6 col-md-4">
         <div class="team-card text-center">
           <img class="team-avatar" src="/img/team/person.webp" alt="Gaia Ingrosso">
           <div class="team-name">Gaia Ingrosso</div>
           <div class="team-meta">PhD student</div>
           <div class="team-links" style="margin-top:6px;">
-            <a href="mailto:gaia.ingrosso@uni-frankfurt.de">gaia.ingrosso@uni-frankfurt.de</a>
+            <a href="mailto:ingrosso@itp.uni-frankfurt.de">ingrosso@itp.uni-frankfurt.de</a>
           </div>
-          <div class="team-meta" style="margin-top:6px;">(email/link can be updated)</div>
+          <div class="team-links" style="margin-top:6px;">
+            <a href="REEMPLAZA_AQUI_INSPIRE_GAIA" target="_blank">Publications</a>
+          </div>
         </div>
       </div>
-    </div>
+    </div> <!-- ✅ cierre correcto del row de PhD -->
   </div>
 
   <!-- Former group members -->
   <div class="team-section">
     <h2>Former group members</h2>
     <ul>
+      <li><a href="https://inspirehep.net/authors/1914555" target="_blank">Dr. Ilia Grishmanovskii</a></li>
+      <li><a href="https://inspirehep.net/authors/1905851" target="_blank">Dr. Olga Soloveva</a></li>
+      <li><a href="https://inspirehep.net/authors/1718277" target="_blank">Dr. Gabriele Coci</a></li>
       <li><a href="https://inspirehep.net/authors/1512235" target="_blank">Dr. Lucia Oliva</a></li>
       <li><a href="https://inspirehep.net/authors/1410711" target="_blank">Dr. Pierre Moreau</a></li>
       <li><a href="https://inspirehep.net/authors/1273504" target="_blank">Dr. Andrej Ilner</a></li>
@@ -210,7 +177,7 @@ draft: false
     <div class="row">
       <div class="col-sm-6 col-md-4">
         <div class="team-card text-center">
-          <img class="team-avatar" src="/img/team/person.webp" alt="Vadim Voronyuk">
+          <img class="team-avatar" src="/img/team/vadym.webp" alt="Vadim Voronyuk">
           <div class="team-name">Dr. Vadim Voronyuk</div>
           <div class="team-meta">JINR Laboratory for Information Technologies, RU-141980 Dubna</div>
           <div class="team-links" style="margin-top:8px;">
@@ -241,7 +208,7 @@ draft: false
     <div class="row">
       <div class="col-sm-6 col-md-4">
         <div class="team-card text-center">
-          <img class="team-avatar" src="/img/team/person.webp" alt="Jörg Aichelin">
+          <img class="team-avatar" src="/img/team/jorg.webp" alt="Jörg Aichelin">
           <div class="team-name">Prof. Dr. Jörg Aichelin</div>
           <div class="team-links">
             <a href="mailto:aichelin@subatech.in2p3.fr">aichelin@subatech.in2p3.fr</a>
