@@ -8,7 +8,7 @@
   </div>
 
   <div style="margin: 18px 0;">
-    <img src="/img/TU_SEGUNDA_IMAGEN.png" alt="Second image" style="width: 100%; height: auto; display: block; border-radius: 10px;">
+    <img src="/img/PHSD-PHQMD.jpg" alt="Second image" style="width: 100%; height: auto; display: block; border-radius: 10px;">
   </div>
 
   <!-- Logos with links -->
