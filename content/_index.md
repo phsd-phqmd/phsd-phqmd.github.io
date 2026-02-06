@@ -1,3 +1,6 @@
+![Movie](img/movie_AuAu.gif)
+<!-- {{< figure src="img/movie_AuAu.gif" >}} -->
+
 {{< rawHTML >}}
 <!-- Images stacked (one per row) -->
 <div style="max-width: 1100px; margin: 0 auto;">
