@@ -82,7 +82,7 @@ draft: false
   <!-- Postdocs -->
   <div class="team-section">
     <h2>Postdocs</h2>
-    <p class="team-subtle">Current postdoctoral researchers contributing to the PHSD/PHQMD programme.</p>
+    <p class="team-subtle">Current postdoctoral researchers contributing to the PHSD/PHQMD code</p>
 
     <div class="row">
       <div class="col-sm-6 col-md-4">
