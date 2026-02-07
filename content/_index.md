@@ -6,10 +6,6 @@
 <div style="max-width: 1100px; margin: 0 auto;">
 
   <div style="margin: 18px 0;">
-    <img src="/img/movie_AuAu.gif" alt="Movie Au+Au" style="width: 100%; height: auto; display: block; border-radius: 10px;">
-  </div>
-
-  <div style="margin: 18px 0;">
     <img src="/img/PHSD-PHQMD.jpg" alt="Second image" style="width: 100%; height: auto; display: block; border-radius: 10px;">
   </div>
 
