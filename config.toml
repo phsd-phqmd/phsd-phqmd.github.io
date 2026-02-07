@@ -10,7 +10,7 @@ theme = "beautifulhugo"
 
 [Params]
   subtitle = "A unified non-equilibrium microscopic transport approach for the description of the dynamics of strongly-interacting hadronic and partonic matter "
-  logo = "img/logo.ico"
+  logo = "img/image.png"
   favicon = "img/logo.ico"
   dateFormat = "October 19, 2021"
   custom_css = ["css/custom.css"]
