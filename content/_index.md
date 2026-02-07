@@ -14,7 +14,7 @@
     <a href="http://theory.gsi.de/~ebratkov/phsd-project/PHSD/index1.html" target="_blank" rel="noopener"
        style="display: inline-flex; align-items: center; gap: 10px; padding: 10px 14px; border: 1px solid rgba(0,0,0,.10); border-radius: 12px; text-decoration: none;">
       <img src="/img/logo_phsd.png" alt="PHSD" style="height: 48px; width: auto; display: block;">
-      <span style="font-weight: 600; color: inherit;">PHSD Project</span>
+      <span style="font-weight: 600; color: inherit;">PHSD</span>
     </a>
 
     <a href="https://phqmd.gitlab.io/" target="_blank" rel="noopener"
