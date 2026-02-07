@@ -1,5 +1,5 @@
 baseURL = "https://phsd-phqmd.github.io/"
-title = "Parton-Hadron-String Dynamics"
+title = "PHSD-PHQMD"
 DefaultContentLanguage = "en"
 theme = "beautifulhugo"
 
@@ -9,7 +9,7 @@ theme = "beautifulhugo"
       unsafe = true
 
 [Params]
-  subtitle = "A microscopic off-shell transport approach for Heavy-Ion Collisions"
+  subtitle = "A unified non-equilibrium microscopic transport approach for the description of the dynamics of strongly-interacting hadronic and partonic matter "
   logo = "img/logo.ico"
   favicon = "img/logo.ico"
   dateFormat = "October 19, 2021"
