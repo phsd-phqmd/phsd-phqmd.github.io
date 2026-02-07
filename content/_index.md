@@ -9,6 +9,11 @@
     <img src="/img/PHSD-PHQMD.jpg" alt="Second image" style="width: 100%; height: auto; display: block; border-radius: 10px;">
   </div>
 
+<!-- Text below -->
+<div style="margin-top: 10px; text-align: center; color: #666; font-size: 14px; line-height: 1.4;">
+  ...
+</div>
+
   <!-- Logos with links (centered) -->
 <div style="margin-top: 26px; display: flex; justify-content: center; gap: 18px; flex-wrap: wrap; align-items: center; text-align: center;">
   <a href="http://theory.gsi.de/~ebratkov/phsd-project/PHSD/index1.html" target="_blank" rel="noopener"
@@ -23,6 +28,12 @@
     <span style="font-weight: 600; color: inherit;">PHQMD</span>
   </a>
 </div>
+
+<!-- Text below -->
+<div style="margin-top: 10px; text-align: center; color: #666; font-size: 14px; line-height: 1.4;">
+  .....
+</div>
+
 
 </div>
 {{< /rawhtml >}}
