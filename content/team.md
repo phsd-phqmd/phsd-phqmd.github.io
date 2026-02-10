@@ -122,7 +122,7 @@ draft: false
     <div class="row">
       <div class="col-sm-6 col-md-4">
         <div class="team-card text-center">
-          <img class="team-avatar" src="/img/team/adrian.webp" alt="Adrian Romero">
+          <img class="team-avatar" src="/img/team/person.webp" alt="Adrian Romero">
           <div class="team-name">Adrian Romero</div>
           <div class="team-meta">PhD student</div>
           <div class="team-links" style="margin-top:6px;">
