@@ -101,7 +101,7 @@ draft: false
 
       <div class="col-sm-6 col-md-4">
         <div class="team-card text-center">
-          <img class="team-avatar" src="/img/team/person.webp" alt="Jiaxing Zhao">
+          <img class="team-avatar" src="/img/team/jiaxing.webp" alt="Jiaxing Zhao">
           <div class="team-name">Dr. Jiaxing Zhao</div>
           <div class="team-links">
             <a href="mailto:jzhao@itp.uni-frankfurt.de">jzhao@itp.uni-frankfurt.de</a>
@@ -133,7 +133,7 @@ draft: false
 
       <div class="col-sm-6 col-md-4">
         <div class="team-card text-center">
-          <img class="team-avatar" src="/img/team/person.webp" alt="Gaia Ingrosso">
+          <img class="team-avatar" src="/img/team/gaia.webp" alt="Gaia Ingrosso">
           <div class="team-name">Gaia Ingrosso</div>
           <div class="team-meta">PhD student</div>
           <div class="team-links" style="margin-top:6px;">
@@ -184,7 +184,7 @@ draft: false
 
       <div class="col-sm-6 col-md-4">
         <div class="team-card text-center">
-          <img class="team-avatar" src="/img/team/person.webp" alt="Wolfgang Cassing">
+          <img class="team-avatar" src="/img/team/wolfgang.webp" alt="Wolfgang Cassing">
           <div class="team-name">Prof. Dr. Dr. Wolfgang Cassing</div>
           <div class="team-meta">Institut für Theoretische Physik I, Heinrich-Buff-Ring 16, 35392 Gießen, Germany</div>
           <div class="team-links" style="margin-top:8px;">
