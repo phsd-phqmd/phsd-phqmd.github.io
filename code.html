@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PHSD-PHQMD | Download Code</title>
+  <meta name="description" content="Code access request page for PHSD-PHQMD." />
+  <link rel="icon" href="assets/img/logo.ico" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body data-page="code">
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="index.html">
+        <img src="assets/img/logo.png" alt="PHSD logo" />
+        <span>PHSD-PHQMD</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html" data-page="home">Home</a>
+        <a href="about.html" data-page="about">About</a>
+        <a href="code.html" data-page="code">Download Code</a>
+        <a href="manual.html" data-page="manual">User Guide</a>
+        <a href="publications.html" data-page="publications">Publications</a>
+        <a href="talks.html" data-page="talks">Talks</a>
+        <a href="team.html" data-page="team">Team</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page container">
+    <section class="subpage-head reveal">
+      <p class="eyebrow">Distribution</p>
+      <h1>Download Code</h1>
+      <p>The approach is under development. Presently it can be provided to experimental collaborations by special request.</p>
+    </section>
+
+    <section class="section reveal">
+      <p class="request-note">Fill out the request form. After verification, code-distribution instructions can be provided by the PHSD/PHQMD team.</p>
+
+      <div class="request-box">
+        <form action="https://formspree.io/f/mqedwjke" method="POST" accept-charset="UTF-8">
+          <input type="hidden" name="_subject" value="PHSD-PHQMD code access request" />
+          <input type="text" name="_gotcha" style="display:none" autocomplete="off" tabindex="-1" />
+
+          <div class="form-grid two">
+            <div>
+              <label for="title">Title <span class="req">*</span></label>
+              <select id="title" name="title" required>
+                <option value="" disabled selected hidden>Please select</option>
+                <option value="Ms">Ms.</option>
+                <option value="Mr">Mr.</option>
+                <option value="Dr">Dr.</option>
+                <option value="Prof">Prof.</option>
+              </select>
+            </div>
+            <div>
+              <label for="fullname">Full name <span class="req">*</span></label>
+              <input id="fullname" type="text" name="full_name" placeholder="Full name" required />
+            </div>
+          </div>
+
+          <div class="form-grid two">
+            <div>
+              <label for="email">Email <span class="req">*</span></label>
+              <input id="email" type="email" name="email" placeholder="name@institute.org" required />
+            </div>
+            <div>
+              <label for="institution">Institution <span class="req">*</span></label>
+              <input id="institution" type="text" name="institution" placeholder="Institution" required />
+            </div>
+          </div>
+
+          <div class="form-grid two">
+            <div>
+              <label for="group">Group / Collaboration <span class="req">*</span></label>
+              <input id="group" type="text" name="group_collaboration" placeholder="e.g. HADES, ALICE" required />
+            </div>
+            <div>
+              <label for="status">Status <span class="req">*</span></label>
+              <select id="status" name="status" required>
+                <option value="" disabled selected hidden>Please select</option>
+                <option value="Student">Student</option>
+                <option value="PhD student">PhD student</option>
+                <option value="Postdoc">Postdoc</option>
+                <option value="Professor">Professor</option>
+                <option value="Staff/Engineer">Staff/Engineer</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-grid two">
+            <div>
+              <label for="city">City <span class="req">*</span></label>
+              <input id="city" type="text" name="city" placeholder="City" required />
+            </div>
+            <div>
+              <label for="country">Country <span class="req">*</span></label>
+              <input id="country" type="text" name="country" placeholder="Country" required />
+            </div>
+          </div>
+
+          <div class="form-grid">
+            <div>
+              <label for="desc">Project description <span class="req">*</span></label>
+              <textarea id="desc" name="project_description" placeholder="Please give a brief description of your project (goals, data/energy range, observables, timeline)." required></textarea>
+            </div>
+          </div>
+
+          <div class="form-grid">
+            <label class="check" for="license">
+              <input id="license" type="checkbox" name="information_certified" value="agree" required />
+              <span>I certify that the above information is correct <span class="req">*</span></span>
+            </label>
+          </div>
+
+          <div class="button-row">
+            <button class="btn btn-primary" type="submit">Submit request</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <p>© <span id="year"></span> PHSD-PHQMD · Code request page.</p>
+    </footer>
+  </main>
+</body>
+</html>
