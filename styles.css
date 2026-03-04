@@ -292,38 +292,38 @@ h3,
 .btn:hover,
 .btn:focus-visible {
   transform: translateY(-1px);
-  filter: brightness(1.04);
+  filter: brightness(1.02);
 }
 
 .btn-primary {
-  background: linear-gradient(120deg, var(--accent), #2bb7ea);
-  color: #0a2234;
+  background: linear-gradient(120deg, #c4e9fb, #addcf2);
+  color: #1f415c;
 }
 
 .btn-secondary {
-  background: linear-gradient(120deg, var(--accent-2), #f2a85b);
-  color: #322009;
+  background: linear-gradient(120deg, #f8dfbe, #f2d1a6);
+  color: #5f4225;
 }
 
 .btn-success {
-  background: linear-gradient(120deg, var(--accent-3), #38d28a);
-  color: #0c2a1a;
+  background: linear-gradient(120deg, #c7efdd, #b4e6d0);
+  color: #24523d;
 }
 
 .btn-talks {
-  background: linear-gradient(120deg, #22d3ee, #0891b2);
-  color: #052531;
+  background: linear-gradient(120deg, #c7edf2, #b5e2ea);
+  color: #1d4f5a;
 }
 
 .btn-outline {
   border-color: var(--line);
   color: var(--text);
-  background: rgba(255, 255, 255, 0.66);
+  background: rgba(255, 255, 255, 0.86);
 }
 
 .btn-danger {
-  background: linear-gradient(120deg, var(--danger), #ff5f75);
-  color: #4b111a;
+  background: linear-gradient(120deg, #f6c8d2, #efb9c5);
+  color: #61303b;
 }
 
 .hero-aside {
