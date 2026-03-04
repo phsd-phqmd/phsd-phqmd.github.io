@@ -1,10 +1,10 @@
 :root {
-  --bg-top: #f7fbff;
-  --bg-mid: #f2f7ff;
-  --bg-bottom: #eef6f4;
-  --surface: rgba(255, 255, 255, 0.84);
-  --surface-soft: rgba(248, 252, 255, 0.92);
-  --line: rgba(32, 66, 104, 0.16);
+  --bg-top: #f1f9ff;
+  --bg-mid: #f8fcff;
+  --bg-bottom: #ffffff;
+  --surface: rgba(255, 255, 255, 0.92);
+  --surface-soft: rgba(248, 253, 255, 0.96);
+  --line: rgba(36, 86, 132, 0.14);
   --text: #17253a;
   --muted: #4f6582;
   --accent: #0ea5e9;
@@ -31,9 +31,9 @@ body {
   font-family: "Sora", "Space Grotesk", "Segoe UI", sans-serif;
   line-height: 1.6;
   background:
-    radial-gradient(circle at 14% 6%, rgba(14, 165, 233, 0.18), transparent 34%),
-    radial-gradient(circle at 82% 2%, rgba(255, 181, 71, 0.18), transparent 32%),
-    radial-gradient(circle at 78% 78%, rgba(38, 194, 129, 0.12), transparent 40%),
+    radial-gradient(circle at 13% 6%, rgba(89, 188, 255, 0.2), transparent 34%),
+    radial-gradient(circle at 85% 2%, rgba(137, 210, 255, 0.2), transparent 34%),
+    radial-gradient(circle at 78% 78%, rgba(199, 234, 255, 0.18), transparent 42%),
     linear-gradient(180deg, var(--bg-top) 0%, var(--bg-mid) 38%, var(--bg-bottom) 100%);
   min-height: 100vh;
   overflow-x: hidden;
@@ -44,8 +44,8 @@ body::before {
   position: fixed;
   inset: 0;
   pointer-events: none;
-  opacity: 0.03;
-  background-image: radial-gradient(#0f233a 0.5px, transparent 0.5px);
+  opacity: 0.016;
+  background-image: radial-gradient(#2f6ea1 0.5px, transparent 0.5px);
   background-size: 3px 3px;
   z-index: -2;
 }
@@ -219,7 +219,6 @@ h3,
   margin: 0;
 }
 
-.hero h1,
 .section-heading h2,
 .subpage-head h1 {
   font-family: "Bebas Neue", "Sora", sans-serif;
@@ -228,16 +227,21 @@ h3,
 }
 
 .hero h1 {
-  font-size: clamp(2.45rem, 7.4vw, 5.6rem);
+  font-family: "Sora", "Segoe UI", sans-serif;
+  font-size: clamp(2.05rem, 5.8vw, 4.35rem);
+  font-weight: 800;
+  letter-spacing: 0.01em;
+  line-height: 1;
+  color: #111821;
   margin-bottom: 0;
 }
 
 .hero-title-row {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
   margin-bottom: 14px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .hero-combo-logo {
@@ -250,7 +254,7 @@ h3,
 }
 
 .hero-combo-logo img {
-  width: clamp(84px, 11vw, 126px);
+  width: clamp(68px, 8.4vw, 98px);
   height: auto;
 }
 
@@ -1216,6 +1220,10 @@ footer {
 
   .form-grid.two {
     grid-template-columns: 1fr;
+  }
+
+  .hero-title-row {
+    flex-wrap: wrap;
   }
 
   .site-nav-grid {
