@@ -377,6 +377,12 @@ h3,
   background: rgba(255, 255, 255, 0.7);
 }
 
+.stack-images img.plain-image {
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+
 .hero-feature-band {
   margin-top: 18px;
   border: 1px solid rgba(31, 71, 118, 0.18);
