@@ -13,7 +13,7 @@ Parton-Hadron-String Dynamics (PHSD) is a microscopic off-shell transport approa
 - hadronization by covariant transition rates
 - final-state hadronic interactions
 
-In the partonic sector, PHSD is based on the Dynamical Quasi-Particle Model (DQPM), constrained by lattice-QCD thermodynamics.
+In the partonic sector, PHSD is based on the Dynamical Quasi-Particle Model (DQPM), fitted by lattice-QCD thermodynamics.
 
 ## What is PHQMD?
 
