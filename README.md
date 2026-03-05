@@ -1,31 +1,63 @@
-# PHSD New Website
+# PHSD-PHQMD
 
-Modernized static version of the legacy `phsd-phqmd.github.io-main` website.
+PHSD-PHQMD is a unified non-equilibrium microscopic transport framework for the description of strongly-interacting hadronic and partonic matter in heavy-ion collisions.
 
-## Content migrated
+This repository hosts the static website of the PHSD-PHQMD project (GitHub Pages ready).
+
+## What is PHSD?
+
+Parton-Hadron-String Dynamics (PHSD) is a microscopic off-shell transport approach that describes the full dynamical evolution of relativistic heavy-ion collisions:
+
+- initial hard scatterings and string formation
+- dynamical deconfinement to the quark-gluon plasma (QGP)
+- hadronization by covariant transition rates
+- final-state hadronic interactions
+
+In the partonic sector, PHSD is based on the Dynamical Quasi-Particle Model (DQPM), constrained by lattice-QCD thermodynamics.
+
+## What is PHQMD?
+
+Parton-Hadron-Quantum-Molecular Dynamics (PHQMD) is the N-body quantum-molecular realization used for baryonic propagation and cluster formation dynamics in heavy-ion reactions.
+
+## Unified PHSD-PHQMD Transport Picture
+
+The combined framework provides:
+
+- Kadanoff-Baym based off-shell transport dynamics
+- in-medium effects within the G-matrix treatment
+- momentum-dependent equation of state (MF and QMD)
+- collision-integral treatment of hadron-parton interactions
+- cluster recognition with MST, SACA, and coalescence options
+- event outputs for common analysis workflows
+
+## Website Sections
 
 - Home
-- About PHSD
-- Download Code (request form)
+- About
+- Download Code
+- User Guide
 - Publications
-- Selected Talks
+- Talks
 - Team
-- Legacy image and team assets from the previous site (`assets/img`)
 
-## Local preview
+## Code Access
+
+Code distribution is handled by request form for collaborations:
+
+- `code.html` in this website
+
+## Local Preview
 
 ```bash
 cd phsdnew
 python3 -m http.server 8000
 ```
 
-Then open: `http://localhost:8000`
+Open: `http://localhost:8000`
 
-## Deploy to GitHub Pages
+## Deployment (GitHub Pages)
 
-1. Create a GitHub repository (or use existing one).
-2. Push the contents of this folder as repository root.
-3. In GitHub: `Settings -> Pages`.
-4. Select branch (usually `main`) and folder `/ (root)`.
-5. Save and wait for Pages build.
-
+1. Push this folder as repository root.
+2. Open `Settings -> Pages`.
+3. Select branch and `/ (root)`.
+4. Save and wait for the Pages build.
