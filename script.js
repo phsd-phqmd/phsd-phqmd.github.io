@@ -220,6 +220,12 @@
         url: "phqmd.html",
         desc: "Independent PHQMD page with About, Publications, Talks, and Results.",
         keywords: "phqmd transport approach publications talks results"
+      },
+      {
+        title: "DQPM Page",
+        url: "dqpm.html",
+        desc: "Dynamical Quasi-Particle Model overview, publications, and theses.",
+        keywords: "dqpm quasiparticle qgp lattice qcd publications"
       }
     ];
 
@@ -342,11 +348,15 @@
       event.preventDefault();
       openSearch();
     });
-  }
-
-  setupReveal();
+  }      setupReveal();
   setupCarousels();
   setupSearch();
 })();
+
+
+
+
+
+
 
 
