@@ -186,6 +186,12 @@
         keywords: "manual run build requirements execution"
       },
       {
+        title: "How to cite",
+        url: "how-to-cite.html",
+        desc: "Recommended PHSD and PHQMD citation references.",
+        keywords: "cite citation doi arxiv inspire references"
+      },
+      {
         title: "Publications",
         url: "publications.html",
         desc: "Citations, key papers, DOI/arXiv/Inspire links.",
@@ -342,4 +348,5 @@
   setupCarousels();
   setupSearch();
 })();
+
 
