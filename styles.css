@@ -1,4 +1,4 @@
-:root {
+﻿:root {
   --bg-top: #f1f9ff;
   --bg-mid: #f8fcff;
   --bg-bottom: #ffffff;
@@ -57,6 +57,19 @@ a {
 
 p {
   margin: 0;
+}
+
+code {
+  font-family: "Consolas", "SFMono-Regular", "Menlo", "Liberation Mono", monospace;
+  font-size: 0.96em;
+  font-weight: 600;
+  color: #204366;
+  background: rgba(106, 180, 234, 0.14);
+  border: 1px solid rgba(36, 86, 132, 0.2);
+  border-radius: 8px;
+  padding: 0.08em 0.38em;
+  display: inline-block;
+  line-height: 1.3;
 }
 
 img {
@@ -295,6 +308,22 @@ h3,
   flex: 0 0 auto;
 }
 
+.btn-quick-link {
+  background: #ffffff;
+  color: #1f415c;
+  border: 1px solid rgba(31, 65, 92, 0.2);
+  box-shadow: 0 6px 14px rgba(20, 43, 67, 0.16);
+}
+
+.btn-quick-link img {
+  filter: drop-shadow(0 2px 4px rgba(15, 28, 45, 0.35));
+}
+
+.btn-quick-link:hover,
+.btn-quick-link:focus-visible {
+  border-color: rgba(49, 97, 137, 0.4);
+  box-shadow: 0 9px 20px rgba(20, 43, 67, 0.22);
+}
 .btn:hover,
 .btn:focus-visible {
   transform: translateY(-1px);
@@ -1324,3 +1353,8 @@ footer a:focus-visible {
     opacity: 1;
   }
 }
+
+
+
+
+

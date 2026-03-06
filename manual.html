@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -34,46 +34,116 @@
   <main class="page container">
     <section class="subpage-head reveal">
       <p class="eyebrow">User Guide</p>
-      <h1>User Guide</h1>
-      <p>How to run the PHSD-PHQMD code. This page is a draft and will be expanded with full instructions.</p>
+      <h1>PHSD-PHQMD: Build and Run Notes</h1>
+      <p>Build and run notes for PHSD-PHQMD, including setup, input flags, and output files.</p>
     </section>
 
     <section class="section reveal">
       <div class="section-heading">
-        <h2>Status</h2>
+        <h2>Overview</h2>
       </div>
       <div class="section-text">
-        <p>This manual is currently under preparation.</p>
-        <p>For access to the code, please use the request form in the Download Code section.</p>
-      </div>
-      <div class="button-row">
-        <a class="btn btn-primary" href="code.html">Go to Download Code</a>
+        <p>
+          The PHSD-PHQMD code is a unified framework for the microscopic description
+          of heavy-ion (A+A), proton-induced reactions (p+A and p+p), as well as
+          pion-induced reactions (pi+A, pi+N).
+        </p>
       </div>
     </section>
 
     <section class="section section-soft reveal">
       <div class="section-heading">
-        <h2>Planned Contents</h2>
+        <h2>How to Run the PHSD-PHQMD Code</h2>
       </div>
-      <div class="card-grid">
-        <article class="card">
-          <h3>1. Requirements</h3>
-          <p>Compiler, libraries, runtime environment, and recommended system setup.</p>
-        </article>
-        <article class="card">
-          <h3>2. Build and Run</h3>
-          <p>Compilation options, run modes, input files, and minimal working example.</p>
-        </article>
-        <article class="card">
-          <h3>3. Outputs</h3>
-          <p>Output file structure, diagnostics, and basic validation checks.</p>
-        </article>
+      <div class="section-text">
+        <p>The code can be run in two modes: <strong>PHSD</strong> and <strong>PHQMD</strong>.</p>
+        <p>That is controlled by the flag <code>IPHQMD</code> set in the <code>inputPHSD</code> file:</p>
+      </div>
+      <ul class="simple-list">
+        <li><code>IPHQMD = 0</code>: HSD/PHSD dynamics</li>
+        <li><code>IPHQMD = 1</code>: propagation with QMD dynamics</li>
+      </ul>
+    </section>
+
+    <section class="section reveal">
+      <div class="section-heading">
+        <h2>Compilation Requirements and Build</h2>
+      </div>
+      <div class="section-text">
+        <p>
+          The minimum requirement to compile PHSD is a Fortran 90 compiler running
+          under Linux, Windows, or macOS platforms (32 or 64 bit). The recommended
+          compilers are <strong>GFortran</strong> and <strong>Intel Fortran Compiler</strong>.
+        </p>
+        <p>
+          On Linux, unzip the compressed source using <code>unzip</code>. Compilation is
+          initiated by the <code>make</code> command (the <code>makefile</code> is already included in
+          the package). After successful compilation, the executable file has the name
+          <code>phsd.exe</code>.
+        </p>
+        <p>The same <code>makefile</code> runs under Windows Fortran 90 compilers.</p>
+        <p>
+          To run the code at LHC energies, use <code>make_LHC</code>, which compiles the code
+          with double precision (with the <code>-r8</code> option).
+        </p>
+      </div>
+    </section>
+
+    <section class="section section-soft reveal">
+      <div class="section-heading">
+        <h2>Input File</h2>
+      </div>
+      <div class="section-text">
+        <p>
+          Initial parameters are set in <code>inputPHSD</code>. See explanations in the
+          <em>PHSD Manual</em> and examples in the code.
+        </p>
+      </div>
+      <article class="card">
+        <h3>Special Attention</h3>
+        <ul class="simple-list">
+          <li><code>IBweight MC</code>: method to simulate impact parameter distribution from <code>Bmin</code> to <code>Bmax</code>.</li>
+          <li><code>NUM</code>: number of parallel events in each subsequent run <code>ISUBS</code>.</li>
+          <li><code>ISUBS</code>: number of subsequent runs.</li>
+          <li><code>iqmdeos</code>: EoS for QMD option <code>IPHQMD=1</code> (<code>0</code>: hard EOS without M.D.I; <code>1</code>: soft EoS; <code>2</code>: soft EoS with momentum dependence).</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="section reveal">
+      <div class="section-heading">
+        <h2>Output Files</h2>
+      </div>
+      <div class="section-text">
+        <p>
+          The parameter for output level (how much information is written out) is
+          called <code>ILOW</code>. The default value is <code>ILOW = 12</code>, which provides
+          the basic outputs:
+        </p>
+      </div>
+      <ul class="simple-list">
+        <li><code>phsd.dat</code> for all particles on an event-by-event basis using OSCAR format (for <code>ILOW = 10, 11, 12</code>) in ASCII format</li>
+        <li><code>FinaloutROOT</code>: similar output in ROOT format</li>
+        <li><code>fort.888</code> for general output and parameter settings</li>
+        <li><code>fort.80</code> for complementary information and errors (for control purposes only)</li>
+      </ul>
+      <div class="section-text">
+        <p>If <code>ILOW &lt; 12</code>, for example <code>11</code>, the ROOT output file is empty.</p>
+      </div>
+      <p class="privacy-note">
+        <strong>Note for ROOT output:</strong> In the <code>makefile</code> there is a check
+        for ROOT availability. Only in that case the ROOT output file
+        <code>FinaloutROOT</code> will be generated.
+      </p>
+      <div class="button-row">
+        <a class="btn btn-primary" href="code.html">Go to Download Code</a>
       </div>
     </section>
 
     <footer>
-      <p>© <span id="year"></span> PHSD-PHQMD · Manual page · <a href="https://www.gsi.de/en/data-privacy-protection" target="_blank" rel="noopener">Data Privacy Protection</a> · <a href="https://www.gsi.de/en/bottommenu/impressum" target="_blank" rel="noopener">Impressum</a></p>
+      <p>&copy; <span id="year"></span> PHSD-PHQMD &middot; Manual page &middot; <a href="https://www.gsi.de/en/data-privacy-protection" target="_blank" rel="noopener">Data Privacy Protection</a> &middot; <a href="https://www.gsi.de/en/bottommenu/impressum" target="_blank" rel="noopener">Impressum</a></p>
     </footer>
   </main>
 </body>
 </html>
+
