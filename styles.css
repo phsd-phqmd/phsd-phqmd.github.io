@@ -102,6 +102,21 @@ img {
   -webkit-backdrop-filter: blur(10px);
 }
 
+.phqmd-top-shell {
+  display: inline-flex;
+  width: auto;
+  max-width: 100%;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  margin-right: auto;
+  padding-right: 14px;
+}
+
+.phqmd-top-shell .brand {
+  width: auto;
+  justify-content: flex-start;
+  font-size: clamp(0.95rem, 1.7vw, 1.5rem);
+}
 .brand {
   display: inline-flex;
   align-items: center;
@@ -187,6 +202,10 @@ img {
 
 .page {
   padding: 104px 0 28px;
+}
+
+body[data-page="phqmd"] .page {
+  padding-top: 64px;
 }
 
 .hero {
@@ -844,6 +863,29 @@ h3,
   max-width: 70ch;
 }
 
+.subpage-head h1.phqmd-main-title {
+  font-family: "Sora", "Segoe UI", sans-serif;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+  line-height: 1.06;
+  font-size: clamp(1.8rem, 4.4vw, 3.35rem);
+  margin: 0;
+}
+
+.phqmd-title-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.phqmd-title-logo {
+  width: clamp(42px, 5.8vw, 68px);
+  height: clamp(42px, 5.8vw, 68px);
+  object-fit: contain;
+  flex: 0 0 auto;
+  filter: drop-shadow(0 3px 8px rgba(20, 43, 67, 0.18));
+}
 .profile-grid {
   display: grid;
   gap: 12px;
@@ -1210,6 +1252,127 @@ footer a:focus-visible {
   transform: translateY(0);
 }
 
+.phqmd-subbanner-wrap {
+  position: sticky;
+  top: 84px;
+  z-index: 980;
+  margin: 12px 0 14px;
+}
+
+#phqmd-about,
+#phqmd-publications,
+#phqmd-talks,
+#phqmd-results {
+  scroll-margin-top: 170px;
+}
+.phqmd-subbanner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.86);
+  padding: 10px 12px;
+}
+
+.phqmd-subbanner-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--text);
+}
+
+.phqmd-subbanner-brand img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  background: #fff;
+}
+
+.phqmd-subnav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.phqmd-subnav a {
+  padding: 7px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.85rem;
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.86);
+}
+
+.phqmd-subnav a:hover,
+.phqmd-subnav a:focus-visible {
+  color: var(--text);
+  border-color: var(--accent);
+}
+
+.phqmd-about-layout {
+  grid-template-columns: 1fr;
+  align-items: start;
+}
+
+.phqmd-logo {
+  width: min(160px, 100%);
+  margin: 4px auto 8px;
+  filter: drop-shadow(0 6px 14px rgba(20, 43, 67, 0.2));
+}
+
+.phqmd-result-grid {
+  display: grid;
+  gap: 12px;
+}
+
+.phqmd-result-card .section-note {
+  margin-top: 10px;
+}
+
+.phqmd-figure img {
+  width: 100%;
+  max-height: 320px;
+  object-fit: contain;
+}
+
+.phqmd-table-card {
+  margin-top: 12px;
+}
+
+.phqmd-table-wrap {
+  overflow-x: auto;
+  margin-top: 10px;
+}
+
+.phqmd-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 720px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid var(--line);
+}
+
+.phqmd-table th,
+.phqmd-table td {
+  border: 1px solid var(--line);
+  padding: 8px;
+  vertical-align: top;
+  font-size: 0.86rem;
+  color: var(--muted);
+}
+
+.phqmd-table th {
+  color: var(--text);
+  background: rgba(239, 248, 255, 0.92);
+  text-align: left;
+}
 @media (min-width: 860px) {
   .hero-grid {
     grid-template-columns: minmax(0, 1fr) minmax(290px, 340px);
@@ -1224,6 +1387,10 @@ footer a:focus-visible {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .phqmd-about-layout {
+    grid-template-columns: 1fr;
+  }
+
   .card-grid.three,
   .profile-grid.three {
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1233,7 +1400,6 @@ footer a:focus-visible {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
-
 @media (min-width: 980px) {
   .carousel-slide-group {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1258,9 +1424,44 @@ footer a:focus-visible {
     width: 290px;
     justify-self: end;
   }
+
+  .phqmd-result-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
+
 @media (max-width: 760px) {
+  .phqmd-title-row {
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .phqmd-title-logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  .phqmd-subbanner-wrap {
+    top: 112px;
+  }
+
+  #phqmd-about,
+  #phqmd-publications,
+  #phqmd-talks,
+  #phqmd-results {
+    scroll-margin-top: 220px;
+  }
+
+  .phqmd-subbanner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .phqmd-subnav {
+    width: 100%;
+  }
+
   .site-header {
     top: 8px;
   }
@@ -1276,7 +1477,19 @@ footer a:focus-visible {
     padding: 8px;
   }
 
-  .brand {
+  .phqmd-top-shell {
+    flex-wrap: nowrap;
+    width: auto;
+    max-width: 100%;
+  }
+
+  .phqmd-top-shell .brand {
+    width: auto;
+    justify-content: flex-start;
+    font-size: clamp(0.98rem, 4.2vw, 1.25rem);
+  }
+
+.brand {
     width: 100%;
     justify-content: center;
     font-size: 1.3rem;
@@ -1338,7 +1551,6 @@ footer a:focus-visible {
     font-size: 1.04rem;
   }
 }
-
 @media (prefers-reduced-motion: reduce) {
   .reveal,
   .reveal.visible,
@@ -1357,4 +1569,42 @@ footer a:focus-visible {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body[data-page="phqmd"] .subpage-head + .section,
+body[data-page="phqmd"] .section + .section {
+  margin-top: 10px;
+}
+
+body[data-page="phqmd"] .reveal,
+body[data-page="phqmd"] .reveal.visible {
+  opacity: 1;
+  transform: none;
+  transition: none;
+}
 
