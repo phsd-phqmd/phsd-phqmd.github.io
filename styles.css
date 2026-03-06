@@ -1,4 +1,4 @@
-﻿:root {
+:root {
   --bg-top: #f1f9ff;
   --bg-mid: #f8fcff;
   --bg-bottom: #ffffff;
@@ -204,7 +204,8 @@ img {
   padding: 104px 0 28px;
 }
 
-body[data-page="phqmd"] .page {
+body[data-page="phqmd"] .page,
+body[data-page="phsd"] .page {
   padding-top: 64px;
 }
 
@@ -1262,7 +1263,11 @@ footer a:focus-visible {
 #phqmd-about,
 #phqmd-publications,
 #phqmd-talks,
-#phqmd-results {
+#phqmd-results,
+#phsd-about,
+#phsd-publications,
+#phsd-talks,
+#phsd-links {
   scroll-margin-top: 170px;
 }
 .phqmd-subbanner {
@@ -1597,14 +1602,156 @@ footer a:focus-visible {
 
 
 body[data-page="phqmd"] .subpage-head + .section,
-body[data-page="phqmd"] .section + .section {
+body[data-page="phqmd"] .section + .section,
+body[data-page="phsd"] .subpage-head + .section,
+body[data-page="phsd"] .section + .section,
+body[data-page="manual"] .subpage-head + .section,
+body[data-page="manual"] .section + .section {
   margin-top: 10px;
 }
 
 body[data-page="phqmd"] .reveal,
-body[data-page="phqmd"] .reveal.visible {
+body[data-page="phqmd"] .reveal.visible,
+body[data-page="phsd"] .reveal,
+body[data-page="phsd"] .reveal.visible {
   opacity: 1;
   transform: none;
   transition: none;
 }
 
+
+.phsd-about-card {
+  display: grid;
+  gap: 14px;
+}
+
+.phsd-about-media {
+  display: grid;
+  gap: 12px;
+  align-items: start;
+  margin: 2px 0;
+}
+
+.phsd-about-media-text {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.78);
+  padding: 12px;
+}
+
+.phsd-about-media-text p {
+  margin-top: 10px;
+}
+
+.phsd-download-link {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  font-weight: 600;
+}
+
+.phsd-media-main img {
+  aspect-ratio: 16 / 10;
+  object-fit: contain;
+}
+
+.phsd-about-media .pub-figure {
+  width: 100%;
+  max-width: none;
+  justify-self: stretch;
+}
+
+.phsd-publication-list {
+  gap: 12px;
+}
+
+.phsd-publication-list .card {
+  background: rgba(255, 255, 255, 0.82);
+}
+
+.phsd-publication-list .pub-title {
+  font-size: clamp(1.08rem, 1.35vw, 1.34rem);
+  line-height: 1.2;
+}
+
+.phsd-pub-item-title {
+  margin: 2px 0 0;
+  color: var(--text);
+  font-size: clamp(0.98rem, 1.1vw, 1.12rem);
+  line-height: 1.3;
+  font-weight: 700;
+}
+
+.phsd-publication-list .pub-meta {
+  margin-top: 7px;
+  line-height: 1.45;
+}
+
+.phsd-publication-list .pub-actions {
+  margin-top: 8px;
+}
+
+.phsd-publication-feature {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(248, 252, 255, 0.9));
+}
+
+.phsd-pub-divider {
+  border: 0;
+  border-top: 1px dashed rgba(32, 66, 104, 0.24);
+  margin: 12px 0;
+}
+
+@media (min-width: 960px) {
+  .phsd-about-media {
+    grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+  }
+
+  .phsd-about-media-reverse {
+    grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  }
+}
+
+
+
+
+
+
+
+.manual-cite-section .section-heading h2 {
+  font-family: "Sora", "Segoe UI", sans-serif;
+  letter-spacing: 0;
+  font-size: clamp(1.24rem, 2.2vw, 1.62rem);
+  line-height: 1.25;
+  font-weight: 700;
+}
+
+.manual-cite-list {
+  gap: 18px;
+}
+
+.manual-cite-list .pub-title {
+  font-size: clamp(1rem, 1.25vw, 1.2rem);
+  line-height: 1.2;
+}
+
+.manual-cite-list .phsd-pub-item-title {
+  font-size: clamp(0.94rem, 1.08vw, 1.04rem);
+  line-height: 1.3;
+}
+
+.manual-cite-list .pub-meta {
+  font-size: 0.85rem;
+}
+
+
+
+.manual-cite-block {
+  display: grid;
+  gap: 8px;
+}
+
+.manual-cite-list .manual-cite-heading {
+  margin: 0 0 2px 4px;
+  font-size: clamp(1.18rem, 1.9vw, 1.48rem);
+  line-height: 1.2;
+}

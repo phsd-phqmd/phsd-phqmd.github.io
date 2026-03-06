@@ -1,4 +1,4 @@
-(function () {
+﻿(function () {
   const page = document.body.getAttribute("data-page");
 
   document.querySelectorAll(".nav-links a[data-page]").forEach((link) => {
@@ -204,18 +204,16 @@
         keywords: "people members contact collaboration"
       },
       {
-        title: "PHSD External Page",
-        url: "http://theory.gsi.de/~ebratkov/phsd-project/PHSD/index1.html",
-        desc: "Legacy PHSD external webpage.",
-        keywords: "legacy old website",
-        external: true
+        title: "PHSD Page",
+        url: "phsd.html",
+        desc: "Independent PHSD page with About, Publications, Talks, and Links.",
+        keywords: "phsd transport approach publications talks links"
       },
       {
-        title: "PHQMD External Page",
-        url: "https://phqmd.gitlab.io/",
-        desc: "PHQMD external project webpage.",
-        keywords: "phqmd external gitlab",
-        external: true
+        title: "PHQMD Page",
+        url: "phqmd.html",
+        desc: "Independent PHQMD page with About, Publications, Talks, and Results.",
+        keywords: "phqmd transport approach publications talks results"
       }
     ];
 
@@ -344,3 +342,4 @@
   setupCarousels();
   setupSearch();
 })();
+
