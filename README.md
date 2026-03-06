@@ -1,6 +1,6 @@
 # PHSD-PHQMD
 
-PHSD-PHQMD is a unified non-equilibrium microscopic transport framework for the description of strongly-interacting hadronic and partonic matter in heavy-ion collisions.
+PHSD-PHQMD is a unified microscopic transport framework for strongly interacting matter in elementary and nuclear reactions across a broad energy range. In the PHSD sector, it describes the full reaction dynamics with off-shell transport based on Kadanoff-Baym theory and DQPM partonic quasiparticles, including dynamical deconfinement, hadronization, and hadronic rescattering. In the PHQMD sector, it extends baryonic propagation to n-body Quantum Molecular Dynamics, enabling the dynamical formation of nuclear clusters and hypernuclei beyond coalescence or statistical approaches. Cluster recognition is performed with MST and SACA algorithms, while hadronic collisions and partonic/QGP dynamics remain consistent with PHSD. Together, PHSD-PHQMD provides a coherent description of both bulk hadron production and cluster/hypernucleus observables from SIS to RHIC/LHC energies in A+A, p+A, p+p, and pion-induced reactions.
 
 This repository hosts the static website of the PHSD-PHQMD project (GitHub Pages ready).
 
