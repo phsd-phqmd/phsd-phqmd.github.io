@@ -1,4 +1,4 @@
-:root {
+﻿:root {
   --bg-top: #f1f9ff;
   --bg-mid: #f8fcff;
   --bg-bottom: #ffffff;
@@ -1754,4 +1754,22 @@ body[data-page="phsd"] .reveal.visible {
   margin: 0 0 2px 4px;
   font-size: clamp(1.18rem, 1.9vw, 1.48rem);
   line-height: 1.2;
+}
+
+body[data-page="team"] .team-head-compact {
+  border: none;
+  background: transparent;
+  box-shadow: none;
+  padding: 0 2px 4px;
+}
+
+body[data-page="team"] .team-head-compact h1 {
+  margin: 0;
+  font-size: clamp(2rem, 4.8vw, 3.15rem);
+  line-height: 0.95;
+}
+
+body[data-page="team"] .subpage-head + .section,
+body[data-page="team"] .section + .section {
+  margin-top: 10px;
 }
