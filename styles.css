@@ -938,6 +938,17 @@ h3,
   gap: 6px;
 }
 
+.simple-list.two-col {
+  display: block;
+  column-count: 2;
+  column-gap: 28px;
+}
+
+.simple-list.two-col li {
+  break-inside: avoid;
+  margin-bottom: 6px;
+}
+
 .talk-list,
 .pub-list {
   display: grid;
@@ -1039,6 +1050,16 @@ details p {
   border-color: var(--accent);
 }
 
+
+.license-card {
+  background: linear-gradient(160deg, rgba(224, 238, 248, 0.88), rgba(244, 250, 255, 0.96));
+  border: 1px solid rgba(98, 137, 173, 0.28);
+  margin-bottom: 18px;
+}
+
+.license-card p {
+  color: var(--text);
+}
 .request-note {
   color: var(--muted);
 }
@@ -1881,3 +1902,12 @@ body[data-page="dqpm"] .reveal.visible {
     grid-template-columns: 1fr;
   }
 }
+
+@media (max-width: 900px) {
+  .simple-list.two-col {
+    column-count: 1;
+  }
+}
+
+
+
