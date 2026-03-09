@@ -1,4 +1,4 @@
-﻿:root {
+:root {
   --bg-top: #f1f9ff;
   --bg-mid: #f8fcff;
   --bg-bottom: #ffffff;
@@ -93,7 +93,7 @@ img {
 .nav-shell {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 14px;
   border: 1px solid var(--line);
   border-radius: 999px;
   padding: 8px 10px;
@@ -120,7 +120,7 @@ img {
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
+  gap: 14px;
   padding: 0 6px;
   font-family: "Sora", "Segoe UI", sans-serif;
   font-weight: 800;
@@ -274,7 +274,7 @@ h3,
 .hero-title-row {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 14px;
   margin-bottom: 14px;
   flex-wrap: nowrap;
 }
@@ -302,7 +302,7 @@ h3,
   margin-top: 18px;
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 14px;
 }
 
 .btn {
@@ -490,7 +490,7 @@ h3,
 .hero-feature-grid {
   margin-top: 18px;
   display: grid;
-  gap: 12px;
+  gap: 14px;
 }
 
 .hero-feature-list {
@@ -498,7 +498,7 @@ h3,
   margin: 0;
   padding: 0;
   display: grid;
-  gap: 10px;
+  gap: 14px;
 }
 
 .feature-item {
@@ -544,7 +544,7 @@ h3,
 .hero-highlights {
   margin-top: 14px;
   display: grid;
-  gap: 12px;
+  gap: 14px;
 }
 
 .hero-carousel-card {
@@ -623,7 +623,7 @@ h3,
 
 .carousel-slide-group {
   display: grid;
-  gap: 10px;
+  gap: 14px;
 }
 
 .carousel-slide-inner {
@@ -636,7 +636,7 @@ h3,
 
 .carousel-slide-publication {
   display: grid;
-  gap: 10px;
+  gap: 14px;
   align-items: start;
 }
 
@@ -756,7 +756,7 @@ h3,
 .logos-row {
   margin-top: 8px;
   display: grid;
-  gap: 10px;
+  gap: 14px;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
 
@@ -764,7 +764,7 @@ h3,
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 14px;
   border: 1px solid var(--line);
   border-radius: 12px;
   padding: 10px 12px;
@@ -817,12 +817,12 @@ h3,
 .section-text {
   color: var(--muted);
   display: grid;
-  gap: 12px;
+  gap: 14px;
 }
 
 .card-grid {
   display: grid;
-  gap: 12px;
+  gap: 14px;
 }
 
 .site-nav-grid {
@@ -845,7 +845,7 @@ h3,
 .phsd-history-photos.two {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 12px;
+  gap: 14px;
 }
 
 @media (max-width: 900px) {
@@ -855,7 +855,7 @@ h3,
 }
 
 .card h3 {
-  font-size: 1.06rem;
+  font-size: 1.12rem;
   margin: 0;
 }
 
@@ -894,7 +894,7 @@ h3,
 .phqmd-title-row {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 14px;
   margin-bottom: 10px;
 }
 
@@ -907,7 +907,7 @@ h3,
 }
 .profile-grid {
   display: grid;
-  gap: 12px;
+  gap: 14px;
 }
 
 .profile-card {
@@ -970,7 +970,7 @@ h3,
 .talk-list,
 .pub-list {
   display: grid;
-  gap: 12px;
+  gap: 14px;
 }
 
 .pub-row {
@@ -1103,7 +1103,7 @@ details p {
 
 .form-grid {
   display: grid;
-  gap: 12px;
+  gap: 14px;
 }
 
 .form-grid.two {
@@ -1193,14 +1193,14 @@ body.search-open {
   max-height: min(78vh, 700px);
   display: grid;
   grid-template-rows: auto auto minmax(0, 1fr);
-  gap: 10px;
+  gap: 14px;
 }
 
 .site-search-head {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 10px;
+  gap: 14px;
 }
 
 .site-search-title {
@@ -1313,7 +1313,7 @@ footer a:focus-visible {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 12px;
+  gap: 14px;
   border: 1px solid var(--line);
   border-radius: 16px;
   background: rgba(255, 255, 255, 0.86);
@@ -1323,7 +1323,7 @@ footer a:focus-visible {
 .phqmd-subbanner-brand {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
+  gap: 14px;
   font-size: 1.1rem;
   font-weight: 800;
   color: var(--text);
@@ -1373,7 +1373,7 @@ footer a:focus-visible {
 
 .phqmd-result-grid {
   display: grid;
-  gap: 12px;
+  gap: 14px;
 }
 
 .phqmd-result-card .section-note {
@@ -1478,7 +1478,7 @@ footer a:focus-visible {
 @media (max-width: 760px) {
   .phqmd-title-row {
     align-items: flex-start;
-    gap: 10px;
+    gap: 14px;
   }
 
   .phqmd-title-logo {
@@ -1592,7 +1592,7 @@ footer a:focus-visible {
   }
 
   .carousel-control {
-    font-size: 1.04rem;
+    font-size: 1.22rem;
   }
 }
 @media (prefers-reduced-motion: reduce) {
@@ -1666,7 +1666,7 @@ body[data-page="phsd"] .reveal.visible {
 
 .phsd-about-media {
   display: grid;
-  gap: 12px;
+  gap: 14px;
   align-items: start;
   margin: 2px 0;
 }
@@ -1701,7 +1701,7 @@ body[data-page="phsd"] .reveal.visible {
 }
 
 .phsd-publication-list {
-  gap: 12px;
+  gap: 14px;
 }
 
 .phsd-publication-list .card {
@@ -1841,10 +1841,10 @@ body[data-page="dqpm"] .reveal.visible {
   color: #1f415c;
   border: 1px solid rgba(31, 65, 92, 0.22);
   box-shadow: 0 8px 18px rgba(20, 43, 67, 0.18);
-  padding: 13px 28px;
-  font-size: 1.04rem;
+  padding: 18px 40px;
+  font-size: 1.22rem;
   font-weight: 800;
-  gap: 10px;
+  gap: 14px;
 }
 
 .dqpm-cta-btn:hover,
@@ -1854,8 +1854,8 @@ body[data-page="dqpm"] .reveal.visible {
 }
 
 .dqpm-cta-btn img {
-  width: 24px;
-  height: 24px;
+  width: 34px;
+  height: 34px;
   object-fit: contain;
   filter: drop-shadow(0 2px 4px rgba(15, 28, 45, 0.34));
 }
@@ -1864,8 +1864,8 @@ body[data-page="dqpm"] .reveal.visible {
   .dqpm-cta-btn {
     width: 100%;
     justify-content: center;
-    font-size: 1rem;
-    padding: 12px 18px;
+    font-size: 1.12rem;
+    padding: 16px 22px;
   }
 }
 
@@ -1874,7 +1874,7 @@ body[data-page="dqpm"] .reveal.visible {
 }
 
 .hero-feature-list-updated {
-  gap: 12px;
+  gap: 14px;
 }
 
 .hero-feature-list-updated .feature-item.is-core::before {
@@ -1931,3 +1931,15 @@ body[data-page="dqpm"] .reveal.visible {
 
 
 
+
+.btn-inspire {
+  background: linear-gradient(120deg, #d9d0f5, #c7baed);
+  color: #3d2f67;
+  border-color: rgba(96, 78, 155, 0.25);
+}
+
+.btn-inspire:hover,
+.btn-inspire:focus-visible {
+  border-color: rgba(96, 78, 155, 0.45);
+  box-shadow: 0 10px 22px rgba(82, 63, 140, 0.22);
+}
