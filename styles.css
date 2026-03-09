@@ -835,6 +835,24 @@ h3,
   background: rgba(255, 255, 255, 0.78);
   padding: 14px;
 }
+.phsd-history-card img {
+  width: 100%;
+  border-radius: 14px;
+  border: 1px solid rgba(32, 66, 104, 0.16);
+  background: #ffffff;
+}
+
+.phsd-history-photos.two {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+@media (max-width: 900px) {
+  .phsd-history-photos.two {
+    grid-template-columns: 1fr;
+  }
+}
 
 .card h3 {
   font-size: 1.06rem;
@@ -1908,6 +1926,8 @@ body[data-page="dqpm"] .reveal.visible {
     column-count: 1;
   }
 }
+
+
 
 
 
