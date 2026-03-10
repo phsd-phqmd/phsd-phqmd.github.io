@@ -76,10 +76,9 @@
         <img src="assets/img/movie_AuAu.gif" alt="Au+Au simulation movie" loading="lazy" decoding="async" />
       </div>
       <article class="card hero-sim-description">
+        <h2>PHSD-PHQMD Modeling Workflow</h2>
         <p>
-          <strong>PHSD-PHQMD</strong> is a Fortran-based unified transport simulation framework for relativistic nucleus-nucleus collisions.
-          It combines two complementary descriptions of baryon dynamics: <strong>PHSD</strong>, which uses mean-field BUU transport,
-          and <strong>PHQMD</strong>, which uses a <strong>Quantum Molecular Dynamics (QMD)</strong> n-body approach. The overview image below summarizes this modeling scheme.
+          PHSD-PHQMD is a Fortran-based unified transport simulation framework for relativistic nucleus-nucleus collisions. It combines two complementary descriptions of baryon dynamics: PHSD, which uses mean-field BUU transport, and PHQMD, which uses a Quantum Molecular Dynamics (QMD) n-body approach. The overview image below summarizes this modeling scheme.
         </p>
         <ul class="simple-list">
           <li>In both modes, the subsequent evolution includes quarks, gluons, mesons, and hadrons, propagated within non-equilibrium Kadanoff-Baym and BUU dynamics.</li>
@@ -89,15 +88,45 @@
         </ul>
       </article>
 
+      
+
       <div class="stack-images">
         <img class="plain-image" src="assets/img/PHSD-PHQMD.png" alt="PHSD-PHQMD overview" loading="eager" decoding="async" />
+      </div>
+
+      <div class="hero-workflow-grid card-grid three">
+        <article class="card">
+          <h3>1. Two Initialization Modes</h3>
+          <p><strong>PHSD mode:</strong> A+A initialization and baryon propagation with mean-field dynamics (BUU).</p>
+          <p><strong>PHQMD mode:</strong> A+A initialization and baryon propagation with Quantum Molecular Dynamics (QMD).</p>
+        </article>
+        <article class="card">
+          <h3>2. Shared Transport Core </h3>
+          <p>Parallel ensemble method. Propagation of partons (quarks, gluons) and mesons with off-shell mean-field Kadanoff-Baym and/or BUU dynamics. </p>
+        </article>
+        <article class="card">
+          <h3>3. Collision Integral</h3>
+          <p>Unified treatment of off-shell hadronic and partonic (QGP)  interactions.</p>
+        </article>
+        <article class="card">
+          <h3>4. Cluster Recognition</h3>
+          <p>MST, SACA, and coalescence mechanisms are available to reconstruct final-state clusters.</p>
+        </article>
+        <article class="card">
+          <h3>5. Final Outputs</h3>
+          <p>Event-level outputs prepared for analysis workflows in OSCAR, ROOT, and Rivet-like formats.</p>
+        </article>
+        <article class="card">
+          <h3>6. Continuous Dynamics</h3>
+          <p>No artificial micro-to-macro handover: a continuous dynamical description from initial state to final hadrons and leptons.</p>
+        </article>
       </div>
 
       <section class="hero-feature-band">
         <div class="hero-feature-head">
           <div>
             <p class="highlight-kicker">New Features</p>
-            <h2 class="hero-feature-title">Special Features of PHSD/PHQMD</h2>
+            <h2 class="hero-feature-title">Special Features of PHSD-PHQMD</h2>
           </div>
           <div class="hero-feature-logos" aria-hidden="true">
             <span class="hero-feature-logo-shell hero-feature-logo-combo">
@@ -326,43 +355,91 @@
 
     </section>
 
-    <section class="section reveal">
+<section class="section reveal movies-section">
       <div class="section-heading">
-        <h2>PHSD/PHQMD Modeling Workflow</h2>
-        <p class="section-note">A unified non-equilibrium microscopic transport approach for heavy-ion and hadron-nucleus reactions from SIS to LHC energies.</p>
+        <h2>Movies</h2>
+        <p class="section-note">Selected PHSD-PHQMD simulation movies and kinematic projections.</p>
       </div>
-      <div class="card-grid three">
-        <article class="card">
-          <h3>1. Two Initialization Modes</h3>
-          <p><strong>PHSD mode:</strong> A+A initialization and baryon propagation with mean-field dynamics (BUU).</p>
-          <p><strong>PHQMD mode:</strong> A+A initialization and baryon propagation with Quantum Molecular Dynamics (QMD).</p>
-        </article>
-        <article class="card">
-          <h3>2. Shared Transport Core</h3>
-          <p>Common propagation of partons (quarks, gluons) and mesons with off-shell mean-field dynamics.</p>
-        </article>
-        <article class="card">
-          <h3>3. Collision Integral</h3>
-          <p>Unified interaction treatment between hadrons and partons, including the QGP phase.</p>
-        </article>
-        <article class="card">
-          <h3>4. Cluster Recognition</h3>
-          <p>MST, SACA, and coalescence mechanisms are available to reconstruct final-state clusters.</p>
-        </article>
-        <article class="card">
-          <h3>5. Final Outputs</h3>
-          <p>Event-level outputs prepared for analysis workflows in OSCAR, ROOT, and Rivet-like formats.</p>
-        </article>
-        <article class="card">
-          <h3>6. Continuous Dynamics</h3>
-          <p>No artificial micro-to-macro handover: a continuous dynamical description from initial state to final hadrons and leptons.</p>
-        </article>
+
+      <div class="movies-block">
+        <h3>Au+Au at sqrt(sNN) = 200 GeV, b = 2 fm</h3>
+        <p class="section-note">Left: collision-space evolution. Center: transverse-momentum (pT) projection. Right: rapidity (y) projection.</p>
+        <div class="card-grid movies-grid three">
+          <article class="card movie-card">
+            <video autoplay muted loop playsinline preload="metadata">
+              <source src="assets/movies/movie_AuAu_200GeV_b2fm.webm" type="video/webm" />
+            </video>
+          </article>
+          <article class="card movie-card">
+            <video autoplay muted loop playsinline preload="metadata">
+              <source src="assets/movies/movie_AuAu_200GeV_b2fm_pt.webm" type="video/webm" />
+            </video>
+          </article>
+          <article class="card movie-card">
+            <video autoplay muted loop playsinline preload="metadata">
+              <source src="assets/movies/movie_AuAu_200GeV_b2fm-y.webm" type="video/webm" />
+            </video>
+          </article>
+        </div>
+      </div>
+
+      <div class="movies-block">
+        <h3>Au+Au at fixed-target energies</h3>
+        <p class="section-note">Comparison of transport dynamics at 35 AGeV (left) and 10 AGeV (right).</p>
+        <div class="card-grid movies-grid two">
+          <article class="card movie-card">
+            <video autoplay muted loop playsinline preload="metadata">
+              <source src="assets/movies/movie_AuAu_35AGeV.webm" type="video/webm" />
+            </video>
+          </article>
+          <article class="card movie-card">
+            <video autoplay muted loop playsinline preload="metadata">
+              <source src="assets/movies/movie_AuAu_10AGeV.webm" type="video/webm" />
+            </video>
+          </article>
+        </div>
+      </div>
+
+      <div class="movies-block">
+        <h3>System-size and energy scan</h3>
+        <p class="section-note">Pb+Pb at 158 AGeV (left), d+Au (center), and p+Pb at 5 TeV (right).</p>
+        <div class="card-grid movies-grid three">
+          <article class="card movie-card">
+            <video autoplay muted loop playsinline preload="metadata">
+              <source src="assets/movies/movie_PbPb_158AGeV.webm" type="video/webm" />
+            </video>
+          </article>
+          <article class="card movie-card">
+            <video autoplay muted loop playsinline preload="metadata">
+              <source src="assets/movies/movie_dAu.webm" type="video/webm" />
+            </video>
+          </article>
+          <article class="card movie-card">
+            <video autoplay muted loop playsinline preload="metadata">
+              <source src="assets/movies/movie_Pierre_pPb_5TeV.webm" type="video/webm" />
+            </video>
+          </article>
+        </div>
+      </div>
+
+      <div class="movies-block">
+        <h3>p+Pb at 5.0 TeV, b = 0</h3>
+        <p class="section-note">Lorentz-contracted view (left) and standard coordinate view (right).</p>
+        <div class="card-grid movies-grid two">
+          <article class="card movie-card">
+            <video autoplay muted loop playsinline preload="metadata">
+              <source src="assets/movies/movie_p-Pb_5.0TeV_b0_Lorentz.webm" type="video/webm" />
+            </video>
+          </article>
+          <article class="card movie-card">
+            <video autoplay muted loop playsinline preload="metadata">
+              <source src="assets/movies/movie_p-Pb_5.0TeV_b0.mp4" type="video/mp4" />
+            </video>
+          </article>
+        </div>
       </div>
     </section>
-
-
-    
-    <section class="section reveal">
+<section class="section reveal">
       <div class="section-heading">
         <h2>Navigate The Site</h2>
         <p class="section-note">All content from the previous PHSD-PHQMD website is preserved and reorganized.</p>
@@ -418,6 +495,10 @@
   </main>
 </body>
 </html>
+
+
+
+
 
 
 

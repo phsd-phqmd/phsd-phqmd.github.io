@@ -1,4 +1,4 @@
-:root {
+﻿:root {
   --bg-top: #f1f9ff;
   --bg-mid: #f8fcff;
   --bg-bottom: #ffffff;
@@ -426,6 +426,14 @@ h3,
   background: rgba(255, 255, 255, 0.7);
 }
 
+.hero-sim-description h2 {
+  margin: 0 0 10px;
+  font-size: clamp(1.35rem, 2.6vw, 1.9rem);
+}
+
+.hero-workflow-grid {
+  margin-top: 14px;
+}
 .stack-images img.plain-image {
   border: 0;
   border-radius: 0;
@@ -842,14 +850,47 @@ h3,
   background: #ffffff;
 }
 
+.phsd-history-photo-75 {
+  width: 75% !important;
+  display: block;
+  margin-inline: auto;
+}
+
 .phsd-history-photos.two {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 14px;
 }
 
+.phsd-history-stack {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 10px;
+}
+
+.phsd-history-figure {
+  margin: 0;
+}
+
+.phsd-history-figure figcaption {
+  margin-top: 6px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--muted);
+  font-weight: 600;
+}
+@media (max-width: 1180px) {
+  .phsd-history-stack {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
 @media (max-width: 900px) {
   .phsd-history-photos.two {
+    grid-template-columns: 1fr;
+  }
+
+  .phsd-history-stack {
     grid-template-columns: 1fr;
   }
 }
@@ -1943,3 +1984,50 @@ body[data-page="dqpm"] .reveal.visible {
   border-color: rgba(96, 78, 155, 0.45);
   box-shadow: 0 10px 22px rgba(82, 63, 140, 0.22);
 }
+
+
+
+
+
+
+.movies-section {
+  margin-top: 12px;
+}
+
+.movies-block + .movies-block {
+  margin-top: 16px;
+}
+
+.movies-block h3 {
+  margin: 0 0 6px;
+  font-size: 1.08rem;
+}
+
+.movies-grid.two,
+.movies-grid.three {
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.movie-card {
+  padding: 10px;
+}
+
+.movie-card video {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+  border: 1px solid rgba(32, 66, 104, 0.2);
+  background: #0f172a;
+}`r`n`r`n.movie-card video {`r`n  cursor: zoom-in;`r`n}`r`n`r`n.movie-card video:focus-visible {`r`n  outline: 2px solid rgba(59, 130, 246, 0.75);`r`n  outline-offset: 2px;`r`n}
+
+@media (min-width: 980px) {
+  .movies-grid.two {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .movies-grid.three {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+

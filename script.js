@@ -324,7 +324,7 @@
     backdrop.addEventListener("click", closeSearch);
     input.addEventListener("input", () => renderResults(input.value));
 
-    document.addEventListener("keydown", (event) => {
+        document.addEventListener("keydown", (event) => {
       if (!overlay.hidden && event.key === "Escape") {
         closeSearch();
         return;
@@ -348,15 +348,53 @@
       event.preventDefault();
       openSearch();
     });
-  }      setupReveal();
+  }
+
+  function setupMovieFullscreen() {
+    const videos = Array.from(document.querySelectorAll(".movies-section .movie-card video"));
+    if (videos.length === 0) {
+      return;
+    }
+
+    const requestFullscreen = (video) => {
+      if (video.requestFullscreen) {
+        const maybePromise = video.requestFullscreen();
+        if (maybePromise && typeof maybePromise.catch === "function") {
+          maybePromise.catch(() => {});
+        }
+        return;
+      }
+
+      if (video.webkitRequestFullscreen) {
+        video.webkitRequestFullscreen();
+        return;
+      }
+
+      if (video.webkitEnterFullscreen) {
+        video.webkitEnterFullscreen();
+      }
+    };
+
+    videos.forEach((video) => {
+      video.setAttribute("tabindex", "0");
+      video.setAttribute("aria-label", "Open movie in fullscreen");
+
+      video.addEventListener("click", () => {
+        requestFullscreen(video);
+      });
+
+      video.addEventListener("keydown", (event) => {
+        if (event.key !== "Enter" && event.key !== " ") {
+          return;
+        }
+        event.preventDefault();
+        requestFullscreen(video);
+      });
+    });
+  }
+
+  setupReveal();
   setupCarousels();
   setupSearch();
+  setupMovieFullscreen();
 })();
-
-
-
-
-
-
-
-
