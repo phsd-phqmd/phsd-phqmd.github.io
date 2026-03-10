@@ -49,43 +49,92 @@
       </div>
       <p>A microscopic N-body transport approach for heavy-ion collisions, cluster formation, and hypernuclei production.</p>
     </section>
-<section class="section reveal" id="phqmd-about">
-      <div class="section-heading">
-        <h2>About PHQMD</h2>
-      </div>
-      <div class="layout phqmd-about-layout">
-        <article class="card">
-          <p>
-            The Parton-Hadron-Quantum-Molecular Dynamics (PHQMD) transport approach is designed to provide a microscopic description of nuclear cluster and hypernucleus formation, as well as general particle production in heavy-ion reactions at relativistic energies.
-          </p>
-          <p>
-            PHQMD is a microscopic n-body transport approach that combines baryon propagation from the Quantum Molecular Dynamics (QMD) model with the dynamical properties and interactions of hadronic and partonic degrees of freedom from the established Parton-Hadron-String Dynamics (PHSD) approach.
-          </p>
-          <p>
-            In contrast to coalescence or statistical models often used for cluster formation, PHQMD forms clusters dynamically through baryon interactions within QMD, allowing the propagation of n-body Wigner density and n-body phase-space correlations, which are essential for cluster formation.
-          </p>
-          <p>
-            Clusters are identified by the MST (Minimum Spanning Tree) or SACA (Simulated Annealing Cluster Algorithm), which search for the most bound nucleon-cluster configurations. Collisions among hadrons, Quark-Gluon-Plasma formation, and parton dynamics are treated in PHQMD in the same way as in PHSD.
-          </p>
+ <section class="section reveal" id="phqmd-about">
+  <div class="section-heading">
+    <h2>About PHQMD</h2>
+  </div>
 
-          <h3>Cluster Production in PHQMD</h3>
-          <p>Clusters can be identified in PHQMD using three different algorithms:</p>
-          <ol>
-            <li>
-              <strong>Potential mechanism:</strong> The attractive potential between baryons with small relative momentum can form bound nucleon groups. In the MST clusterization algorithm, nucleons <em>i</em> and <em>j</em> are considered bound when
-              <code>|r<sub>i</sub><sup>*</sup> - r<sub>j</sub><sup>*</sup>| &lt; r<sub>clus</sub></code>,
-              where positions are boosted to the pair center-of-mass frame and <code>r<sub>clus</sub> = 4 fm</code> (approximately the range of the attractive NN potential). Additionally, clusters must satisfy negative binding energy, <code>E<sub>B</sub> &lt; 0</code>. MST is used as a cluster recognition tool (applied perturbatively), while QMD propagates baryons rather than pre-formed clusters.
-            </li>
-            <li>
-              <strong>Kinetic mechanism:</strong> Deuterons are created through catalytic hadronic reactions <code>&pi;NN &harr; &pi;d</code> and <code>NNN &harr; Nd</code> in different isospin channels. Quantum effects are included via excluded volume and projection onto the deuteron wave function in momentum space, which reduces production especially at target/projectile rapidities.
-            </li>
-            <li>
-              <strong>Coalescence mechanism:</strong> A proton and neutron form a deuteron if their phase-space distance at freeze-out satisfies <code>|r<sub>1</sub> - r<sub>2</sub>| &le; 3.575 fm</code> and <code>|p<sub>1</sub> - p<sub>2</sub>| &le; 285 MeV/c</code>. In PHQMD this method is used for model studies and comparison purposes.
-            </li>
-          </ol>
-        </article>
-      </div>
-    </section>
+  <div class="layout phqmd-about-layout">
+    <article class="card">
+      <p>
+        The Parton-Hadron-Quantum-Molecular Dynamics (PHQMD) transport approach is an
+        <em>n</em>-body microscopic framework designed to describe nuclear cluster and
+        hypernucleus formation, as well as general particle production, in relativistic
+        heavy-ion reactions.
+      </p>
+
+      <p>
+        PHQMD combines baryon propagation from the Quantum Molecular Dynamics (QMD)
+        model with the dynamical properties and interactions of hadronic and partonic
+        degrees of freedom from the Parton-Hadron-String Dynamics (PHSD) approach.
+      </p>
+
+      <p>
+        A recent development in PHQMD is the inclusion of a momentum-dependent nucleon
+        potential in addition to the static, density-dependent Skyrme interaction. This
+        extension enables three distinct equation-of-state (EoS) scenarios: two static
+        cases (“soft” and “hard”), which differ in compressibility, and a soft
+        momentum-dependent EoS calibrated to <em>pA</em> elastic scattering data.
+      </p>
+
+      <h3>Cluster Production in PHQMD</h3>
+
+      <p>
+        In contrast to coalescence or statistical approaches, PHQMD forms clusters
+        dynamically through baryon interactions described within QMD. This allows the
+        propagation of the <em>n</em>-body Wigner density and <em>n</em>-body
+        phase-space correlations, which are essential for cluster formation.
+      </p>
+
+      <p>Clusters can be identified in PHQMD using three different algorithms:</p>
+
+      <ol>
+        <li>
+          <strong>Potential mechanism:</strong>
+          The attractive potential between baryons with small relative momentum can keep
+          them close together and lead to bound groups of nucleons. These co-moving
+          nucleons can be identified during the dynamical evolution using the advanced
+          Minimum Spanning Tree (aMST) method or the SACA (Simulated Annealing Cluster
+          Algorithm), which searches for the most bound configuration of nucleons and
+          hyperons.
+          <br /><br />
+          In the MST algorithm, two nucleons <em>i</em> and <em>j</em> are considered
+          bound if
+          <code>|r<sub>i</sub><sup>*</sup> - r<sub>j</sub><sup>*</sup>| &lt; r<sub>clus</sub></code>,
+          where the positions are evaluated in the center-of-mass frame of the pair and
+          <code>r<sub>clus</sub> = 4 fm</code>, roughly corresponding to the range of the
+          attractive NN potential. In addition, aMST requires a negative binding energy,
+          <code>E<sub>B</sub> &lt; 0</code>, and includes a stabilization procedure to
+          prevent the spontaneous decay of clusters caused by the semiclassical treatment.
+          It should be noted that (a)MST acts as a cluster recognition tool, applied
+          perturbatively, rather than as the actual formation mechanism, since QMD
+          propagates baryons and not pre-formed clusters.
+        </li>
+
+        <li>
+          <strong>Kinetic mechanism:</strong>
+          Deuterons are produced through catalytic hadronic reactions
+          <code>&pi;NN &harr; &pi;d</code> and
+          <code>NNN &harr; Nd</code> in different isospin channels. Quantum effects are
+          incorporated through excluded-volume corrections and projection onto the
+          deuteron wave function in momentum space, which reduces the production
+          probability, especially at target and projectile rapidities.
+        </li>
+
+        <li>
+          <strong>Coalescence mechanism:</strong>
+          A proton and neutron form a deuteron if their phase-space distance at
+          freeze-out satisfies
+          <code>|r<sub>1</sub> - r<sub>2</sub>| &le; 3.575 fm</code>
+          and
+          <code>|p<sub>1</sub> - p<sub>2</sub>| &le; 285 MeV/c</code>.
+          In PHQMD, this perturbative method is used only for model studies and
+          comparison purposes.
+        </li>
+      </ol>
+    </article>
+  </div>
+</section>
 
     <section class="section section-soft reveal" id="phqmd-publications">
       <div class="section-heading">

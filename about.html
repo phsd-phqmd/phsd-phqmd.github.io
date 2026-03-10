@@ -33,41 +33,146 @@
   </header>
 
   <main class="page container">
-    <section class="subpage-head reveal">
-      <p class="eyebrow">Model Description</p>
-      <h1>About PHSD-PHQMD</h1>
-      <p>PHSD-PHQMD is a unified microscopic transport framework that combines off-shell parton-hadron dynamics with n-body cluster and hypernucleus formation at relativistic energies.</p>
-    </section>
+  <main class="page container">
+  <section class="subpage-head reveal">
+    <p class="eyebrow">Model Description</p>
+    <h1>About PHSD-PHQMD</h1>
+    <p>
+      PHSD-PHQMD is a unified microscopic transport framework for relativistic
+      nucleus-nucleus collisions that combines off-shell parton-hadron dynamics
+      with n-body baryon propagation, cluster formation, and hypernucleus production.
+    </p>
+  </section>
 
-    <section class="section reveal">
-      <div class="section-heading">
-        <h2>What Is PHSD-PHQMD?</h2>
+  <section class="section reveal">
+    <div class="section-heading">
+      <h2>What Is PHSD-PHQMD?</h2>
+    </div>
+
+    <div class="section-text">
+      <p>
+        <strong>PHSD-PHQMD</strong> is a Fortran-based unified transport simulation
+        framework for relativistic nucleus-nucleus collisions. It combines two
+        complementary descriptions of baryon dynamics:
+        <strong>PHSD</strong>, based on mean-field BUU transport, and
+        <strong>PHQMD</strong>, which follows a
+        <strong>Quantum Molecular Dynamics (QMD)</strong> n-body approach.
+      </p>
+
+      <p>
+        In both modes, the subsequent evolution includes quarks, gluons, mesons,
+        and hadrons propagated within a nonequilibrium
+        <strong>Kadanoff-Baym</strong> and <strong>BUU</strong> dynamics.
+        Interactions are treated through a collision integral for off-shell hadrons
+        and QGP partons, realized within the
+        <strong>Dynamical QuasiParticle Model (DQPM)</strong>, which describes the
+        partonic medium consistently with lattice-QCD thermodynamics.
+      </p>
+
+      <p>
+        Final-state nuclear fragments and formed clusters can be reconstructed using
+        <strong>MST</strong> (Minimum Spanning Tree),
+        <strong>SACA</strong> (Simulated Annealing Cluster Algorithm),
+        or <strong>coalescence-based</strong> algorithms. Simulated events can be
+        exported in <strong>OSCAR</strong>, <strong>ROOT</strong>, and
+        <strong>Rivet</strong> formats.
+      </p>
+
+      <p>
+        <strong>The Parton-Hadron-String Dynamics (PHSD)</strong> is a microscopic
+        off-shell transport approach that consistently describes the full evolution
+        of a relativistic heavy-ion collision from the initial hard scatterings and
+        string formation through the dynamical deconfinement phase transition to the
+        quark-gluon plasma, as well as hadronization and the subsequent interactions
+        in the hadronic phase. It has been developed by the Giessen/Frankfurt groups
+        on the basis of the <strong>Hadron-String Dynamics transport approach (HSD)</strong>,
+        and in the hadronic sector <strong>PHSD</strong> is equivalent to HSD.
+      </p>
+
+      <p>
+        In <strong>PHSD</strong>, the transition from the partonic (quarks and gluons)
+        to hadronic degrees of freedom is described by covariant transition rates for
+        the fusion of quark-antiquark pairs to mesonic resonances or three quarks
+        (antiquarks) to baryonic states. This dynamical hadronization obeys flavor
+        current conservation, color neutrality, and energy-momentum conservation.
+        Two-particle correlations from finite parton spectral widths are treated
+        dynamically by <strong>generalized off-shell transport equations</strong>
+        that go beyond mean-field or Boltzmann approximations.
+      </p>
+
+      <p>
+        The transport-theoretical description of quarks and gluons in
+        <strong>PHSD</strong> is based on the
+        <strong>Dynamical Quasi-Particle Model (DQPM)</strong>, constructed to
+        reproduce lattice-QCD results for a quark-gluon plasma in thermodynamic
+        equilibrium. The <strong>DQPM</strong> supplies mean fields for gluons
+        and quarks, as well as effective two-body interactions implemented in
+        <strong>PHSD</strong>. Close to the phase transition, dynamical quarks
+        and antiquarks become massive, such that resonant pre-hadronic color-dipole
+        states (<em>q-qbar</em> and <em>qqq</em>) are formed at large invariant mass
+        and then decay sequentially to the meson and baryon octets. The resulting
+        hadronization process increases total entropy and remains consistent with
+        the second law of thermodynamics.
+      </p>
+
+      <div class="button-row dqpm-cta-row">
+        <a class="btn btn-with-logo btn-quick-link dqpm-cta-btn" href="dqpm.html">
+          <img src="assets/dqpm/DQPM_logo.png" alt="DQPM logo" loading="lazy" decoding="async" />
+          Explore DQPM
+        </a>
       </div>
-            <div class="section-text">
-        <p><strong>The Parton-Hadron-String Dynamics (PHSD)</strong> is a microscopic off-shell transport approach that consistently describes the full evolution of a relativistic heavy-ion collision from the initial hard scatterings and string formation through the dynamical deconfinement phase transition to the quark-gluon plasma as well as hadronization and the subsequent interactions in the hadronic phase. It has been developed by the Giessen/Frankfurt groups on the basis of the <strong>Hadron-String Dynamics transport approach (HSD)</strong>, and in the hadronic sector <strong>PHSD</strong> is equivalent to HSD.</p>
 
-        <p>In <strong>PHSD</strong>, the transition from the partonic (quarks and gluons) to hadronic degrees of freedom is described by covariant transition rates for the fusion of quark-antiquark pairs to mesonic resonances or three quarks (antiquarks) to baryonic states. This dynamical hadronization obeys flavor current-conservation, color neutrality, and energy-momentum conservation. Two-particle correlations from finite parton spectral widths are treated dynamically by <strong>generalized off-shell transport equations</strong> that go beyond mean-field or Boltzmann approximations.</p>
+      <p>
+        The <strong>PHSD</strong> approach has been applied to nucleus-nucleus
+        collisions from low SPS to LHC energies to explore the space-time regions
+        of partonic matter. It provides a consistent description of bulk observables
+        in heavy-ion collisions, including rapidity spectra, transverse-mass
+        distributions, and azimuthal asymmetries (<em>v</em><sub>1</sub>,
+        <em>v</em><sub>2</sub>, <em>v</em><sub>3</sub>, <em>v</em><sub>4</sub>)
+        for multiple particle species, and has also been used successfully for
+        dilepton production analyses from hadronic and partonic sources at SPS,
+        RHIC, and LHC energies.
+      </p>
 
-        <p>The transport-theoretical description of quarks and gluons in <strong>PHSD</strong> is based on the <strong>Dynamical Quasi-Particle Model (DQPM)</strong>, constructed to reproduce lattice-QCD results for a quark-gluon plasma in thermodynamic equilibrium. The <strong>DQPM</strong> supplies mean fields for gluons/quarks and effective two-body interactions implemented in <strong>PHSD</strong>. Close to the phase transition, dynamical quarks and antiquarks become massive, thus resonant pre-hadronic color-dipole states (q-qbar and qqq) are formed at large invariant mass and then decay sequentially to the meson and baryon octets. The resulting hadronization process increases total entropy and remains consistent with the second law of thermodynamics.</p>
+      <p>
+        Equilibrium properties of the QGP have also been studied with
+        <strong>PHSD</strong> simulations in a finite box with periodic boundary
+        conditions at fixed temperature <em>T</em>. In particular, the shear-viscosity
+        to entropy-density ratio from <strong>PHSD</strong> shows a minimum of about
+        0.1 near the critical temperature
+        <em>T</em><sub>c</sub> = 160 MeV and approaches the perturbative-QCD limit
+        at higher temperatures, in line with lattice-QCD results. This supports a
+        strongly interacting liquid-like QGP (sQGP) rather than a weakly interacting
+        gas of partons.
+      </p>
 
-        <div class="button-row dqpm-cta-row">
-          <a class="btn btn-with-logo btn-quick-link dqpm-cta-btn" href="dqpm.html">
-            <img src="assets/dqpm/DQPM_logo.png" alt="DQPM logo" loading="lazy" decoding="async" />
-            Explore DQPM
-          </a>
-        </div>
+      <p>
+        <strong>The Parton-Hadron-Quantum-Molecular Dynamics (PHQMD)</strong>
+        transport approach is designed to provide a microscopic description of
+        nuclear cluster and hypernucleus formation, as well as general particle
+        production, in heavy-ion reactions at relativistic energies.
+      </p>
 
-        <p>The <strong>PHSD</strong> approach has been applied to nucleus-nucleus collisions from low SPS to LHC energies to explore the space-time regions of partonic matter. It provides a consistent description of bulk observables in heavy-ion collisions, including rapidity spectra, transverse-mass distributions, and azimuthal asymmetries (v1, v2, v3, v4) for multiple particle species, and has also been used successfully for dilepton production analyses from hadronic and partonic sources at SPS, RHIC, and LHC energies.</p>
+      <p>
+        In contrast to coalescence or statistical models often used for cluster
+        formation, <strong>PHQMD</strong> forms clusters dynamically through
+        interactions between baryons described within
+        <strong>Quantum Molecular Dynamics (QMD)</strong>, allowing the propagation
+        of the n-body Wigner density and n-body phase-space correlations that are
+        essential for cluster formation.
+      </p>
 
-        <p>Equilibrium properties of the QGP have also been studied with <strong>PHSD</strong> simulations in a finite box with periodic boundary conditions at fixed temperature T. In particular, the shear-viscosity to entropy-density ratio from <strong>PHSD</strong> shows a minimum of about 0.1 near the critical temperature Tc = 160 MeV and approaches the perturbative-QCD limit at higher temperatures, in line with lattice-QCD results. This supports a strongly interacting liquid-like QGP (sQGP) rather than a weakly interacting gas of partons.</p>
-
-        <p><strong>The Parton-Hadron-Quantum-Molecular Dynamics (PHQMD)</strong> transport approach is designed to provide a microscopic description of nuclear cluster and hypernucleus formation as well as general particle production in heavy-ion reactions at relativistic energies.</p>
-
-        <p>In difference to coalescence or statistical models, often used for cluster formation, <strong>PHQMD</strong> forms clusters dynamically due to interactions between baryons described on the basis of Quantum Molecular Dynamics (QMD), which allows propagation of the n-body Wigner density and n-body correlations in phase-space, essential for cluster formation.</p>
-
-        <p>Clusters are identified by the MST (Minimum Spanning Tree) or the SACA (Simulated Annealing Cluster Algorithm), which finds the most bound configuration of nucleons and clusters. Collisions among hadrons, Quark-Gluon-Plasma formation, and parton dynamics in <strong>PHQMD</strong> are treated in the same way as in the established Parton-Hadron-String Dynamics (PHSD) approach.</p>
-      </div>
-    </section>
+      <p>
+        Clusters in <strong>PHQMD</strong> can be reconstructed using
+        <strong>MST</strong>, <strong>SACA</strong>, or coalescence-based algorithms.
+        At the same time, collisions among hadrons, quark-gluon-plasma formation,
+        and parton dynamics are treated in the same way as in the established
+        <strong>PHSD</strong> approach, making PHSD-PHQMD a consistent unified
+        framework for both bulk particle production and cluster observables.
+      </p>
+    </div>
+  </section>
+</main>
 
 
 

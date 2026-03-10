@@ -2013,13 +2013,25 @@ body[data-page="dqpm"] .reveal.visible {
   padding: 10px;
 }
 
-.movie-card video {
+.movie-card video,
+.movie-card img {
   width: 100%;
   display: block;
   border-radius: 10px;
   border: 1px solid rgba(32, 66, 104, 0.2);
-  background: #0f172a;
-}`r`n`r`n.movie-card video {`r`n  cursor: zoom-in;`r`n}`r`n`r`n.movie-card video:focus-visible {`r`n  outline: 2px solid rgba(59, 130, 246, 0.75);`r`n  outline-offset: 2px;`r`n}
+  background: #ffffff;
+  aspect-ratio: 16 / 10;
+  object-fit: contain;
+}
+
+.movie-card video {
+  cursor: zoom-in;
+}
+
+.movie-card video:focus-visible {
+  outline: 2px solid rgba(59, 130, 246, 0.75);
+  outline-offset: 2px;
+}
 
 @media (min-width: 980px) {
   .movies-grid.two {
@@ -2030,4 +2042,9 @@ body[data-page="dqpm"] .reveal.visible {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
+
+
+
+
+
 
