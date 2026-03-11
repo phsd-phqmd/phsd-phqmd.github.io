@@ -1028,12 +1028,22 @@ h3,
   border-radius: 10px;
   overflow: hidden;
   background: #ffffff;
+  padding: 8px;
 }
 
 .talk-preview {
   width: 100%;
   height: 300px;
   border: 0;
+  display: block;
+  background: #ffffff;
+}
+
+.talk-cover {
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+  object-position: center;
   display: block;
   background: #ffffff;
 }
@@ -2082,7 +2092,8 @@ body[data-page="dqpm"] .reveal.visible {
     grid-template-columns: 1fr;
   }
 
-  .talk-preview {
+  .talk-preview,
+  .talk-cover {
     height: 260px;
   }
 }
@@ -2094,3 +2105,7 @@ body[data-page="talks"] .reveal.visible {
   transform: none;
   transition: none;
 }
+
+
+
+
