@@ -393,8 +393,218 @@
     });
   }
 
+  function setupNavSubmenus() {
+    const submenuConfig = {
+      home: {
+        title: "Home sections",
+        items: [
+          { label: "PHSD-PHQMD Modeling Workflow", href: "index.html#home-workflow" },
+          { label: "Special Features of PHSD-PHQMD", href: "index.html#home-features" },
+          { label: "Movies", href: "index.html#home-movies" }
+        ]
+      },
+      about: {
+        title: "About sections",
+        items: [
+          { label: "What Is PHSD-PHQMD?", href: "about.html#about-what-is" },
+          { label: "How to cite PHSD-PHQMD code", href: "about.html#about-cite-code" }
+        ]
+      },
+      manual: {
+        title: "User Guide sections",
+        items: [
+          { label: "Overview", href: "manual.html#overview" },
+          { label: "How to Run the PHSD-PHQMD Code", href: "manual.html#run-code" },
+          { label: "Compilation Requirements and Build", href: "manual.html#build" },
+          { label: "Input File", href: "manual.html#input-file" },
+          { label: "Output File", href: "manual.html#output-file" },
+          { label: "How to cite PHSD-PHQMD code", href: "manual.html#cite-code" }
+        ]
+      },
+      publications: {
+        title: "Publications sections",
+        items: [
+          { label: "How To Cite PHSD", href: "publications.html#pub-cite-phsd" },
+          { label: "Basic References To The PHSD Model", href: "publications.html#pub-basic-phsd" },
+          { label: "How To Cite PHQMD", href: "publications.html#pub-cite-phqmd" },
+          { label: "Basic References To The PHQMD Model", href: "publications.html#pub-basic-phqmd" },
+          { label: "Other Publications", href: "publications.html#pub-other" }
+        ]
+      },
+      team: {
+        title: "Team sections",
+        items: [
+          { label: "Group Leader", href: "team.html#team-group-leader" },
+          { label: "Researchers", href: "team.html#team-researchers" },
+          { label: "PhD Students", href: "team.html#team-phd-students" },
+          { label: "Collaborators", href: "team.html#team-collaborators" },
+          { label: "Former Group Members", href: "team.html#team-former-members" },
+          { label: "PHSD History", href: "team.html#team-history" }
+        ]
+      }
+    };
+
+    const triggers = Array.from(document.querySelectorAll(".nav-links a[data-page]")).filter(
+      (link) => Boolean(submenuConfig[link.dataset.page])
+    );
+
+    if (triggers.length === 0) {
+      return;
+    }
+
+    const popover = document.createElement("div");
+    popover.className = "nav-submenu-popover";
+    popover.setAttribute("aria-hidden", "true");
+    popover.innerHTML = [
+      '<p class="nav-submenu-title"></p>',
+      '<div class="nav-submenu-links" role="menu"></div>'
+    ].join("");
+    document.body.appendChild(popover);
+
+    const titleNode = popover.querySelector(".nav-submenu-title");
+    const linksNode = popover.querySelector(".nav-submenu-links");
+
+    if (!titleNode || !linksNode) {
+      return;
+    }
+
+    let activeTrigger = null;
+    let closeTimer = null;
+
+    function clearCloseTimer() {
+      if (closeTimer) {
+        window.clearTimeout(closeTimer);
+        closeTimer = null;
+      }
+    }
+
+    function closePopover() {
+      clearCloseTimer();
+      popover.classList.remove("is-open");
+      popover.setAttribute("aria-hidden", "true");
+      if (activeTrigger) {
+        activeTrigger.setAttribute("aria-expanded", "false");
+      }
+      activeTrigger = null;
+    }
+
+    function scheduleClose() {
+      clearCloseTimer();
+      closeTimer = window.setTimeout(closePopover, 140);
+    }
+
+    function positionPopover(trigger) {
+      const triggerRect = trigger.getBoundingClientRect();
+      const pageX = window.scrollX || window.pageXOffset;
+      const pageY = window.scrollY || window.pageYOffset;
+
+      popover.style.left = "0px";
+      popover.style.top = "0px";
+      popover.classList.add("is-open");
+
+      const popRect = popover.getBoundingClientRect();
+      const minLeft = pageX + 12;
+      const maxLeft = pageX + window.innerWidth - popRect.width - 12;
+      const centeredLeft = pageX + triggerRect.left + triggerRect.width / 2 - popRect.width / 2;
+      const finalLeft = Math.max(minLeft, Math.min(centeredLeft, maxLeft));
+      const finalTop = pageY + triggerRect.bottom + 8;
+
+      popover.style.left = `${finalLeft}px`;
+      popover.style.top = `${finalTop}px`;
+    }
+
+    function openPopover(trigger) {
+      const pageKey = trigger.dataset.page;
+      const config = submenuConfig[pageKey];
+      if (!config) {
+        return;
+      }
+
+      clearCloseTimer();
+      activeTrigger = trigger;
+      triggers.forEach((link) => {
+        link.setAttribute("aria-expanded", link === trigger ? "true" : "false");
+      });
+
+      titleNode.textContent = config.title;
+      linksNode.innerHTML = "";
+
+      config.items.forEach((item) => {
+        const link = document.createElement("a");
+        link.href = item.href;
+        link.textContent = item.label;
+        link.setAttribute("role", "menuitem");
+        link.addEventListener("click", () => closePopover());
+        linksNode.appendChild(link);
+      });
+
+      popover.setAttribute("aria-hidden", "false");
+      positionPopover(trigger);
+    }
+
+    triggers.forEach((trigger) => {
+      trigger.setAttribute("aria-haspopup", "true");
+      trigger.setAttribute("aria-expanded", "false");
+
+      trigger.addEventListener("mouseenter", () => openPopover(trigger));
+      trigger.addEventListener("focus", () => openPopover(trigger));
+      trigger.addEventListener("mouseleave", scheduleClose);
+      trigger.addEventListener("blur", (event) => {
+        const next = event.relatedTarget;
+        if (next && popover.contains(next)) {
+          return;
+        }
+        scheduleClose();
+      });
+
+      trigger.addEventListener("keydown", (event) => {
+        if (event.key === "ArrowDown") {
+          event.preventDefault();
+          openPopover(trigger);
+          const firstLink = linksNode.querySelector("a");
+          if (firstLink) {
+            firstLink.focus();
+          }
+        }
+        if (event.key === "Escape") {
+          closePopover();
+        }
+      });
+    });
+
+    popover.addEventListener("mouseenter", clearCloseTimer);
+    popover.addEventListener("mouseleave", scheduleClose);
+    popover.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") {
+        closePopover();
+        if (activeTrigger) {
+          activeTrigger.focus();
+        }
+      }
+    });
+
+    document.addEventListener("click", (event) => {
+      if (!popover.classList.contains("is-open")) {
+        return;
+      }
+      if (popover.contains(event.target)) {
+        return;
+      }
+      if (activeTrigger && activeTrigger.contains(event.target)) {
+        return;
+      }
+      closePopover();
+    });
+
+    window.addEventListener("resize", closePopover);
+    window.addEventListener("scroll", closePopover, { passive: true });
+  }
   setupReveal();
   setupCarousels();
   setupSearch();
+  setupNavSubmenus();
   setupMovieFullscreen();
 })();
+
+
+
