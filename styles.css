@@ -2087,3 +2087,10 @@ body[data-page="dqpm"] .reveal.visible {
   }
 }
 
+
+body[data-page="talks"] .reveal,
+body[data-page="talks"] .reveal.visible {
+  opacity: 1;
+  transform: none;
+  transition: none;
+}
