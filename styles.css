@@ -961,6 +961,15 @@ h3,
   margin-inline: auto;
 }
 
+.phsd-history-photo-portrait {
+  width: auto !important;
+  max-width: 100%;
+  height: clamp(420px, 50vw, 570px);
+  max-height: none;
+  display: block;
+  margin-inline: auto;
+}
+
 .phsd-history-photos.two {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -992,6 +1001,11 @@ h3,
 
   .phsd-history-stack {
     grid-template-columns: 1fr;
+  }
+
+  .phsd-history-photo-portrait {
+    height: auto;
+    max-height: clamp(280px, 70vw, 500px);
   }
 }
 
