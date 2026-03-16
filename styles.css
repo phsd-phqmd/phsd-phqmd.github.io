@@ -1277,6 +1277,26 @@ details p {
   padding: 10px 12px;
 }
 
+.protected-download-link {
+  color: #5a4fa6;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  background: rgba(155, 148, 207, 0.2);
+  border: 1px solid rgba(155, 148, 207, 0.35);
+  border-radius: 8px;
+  padding: 0.04rem 0.4rem;
+  margin-inline: 0.18rem;
+  display: inline-block;
+}
+
+.protected-download-link:hover,
+.protected-download-link:focus-visible {
+  color: #463c86;
+  background: rgba(155, 148, 207, 0.28);
+  border-color: rgba(90, 79, 166, 0.45);
+}
+
 .request-box {
   margin-top: 14px;
   border: 1px solid var(--line);
