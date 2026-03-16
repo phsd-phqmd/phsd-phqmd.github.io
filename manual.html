@@ -66,29 +66,65 @@
       </ul>
     </section>
 
-    <section class="section reveal" id="build">
-      <div class="section-heading">
-        <h2>Compilation Requirements and Build</h2>
-      </div>
-      <div class="section-text">
-        <p>
-          The minimum requirement to compile PHSD is a Fortran 90 compiler running
-          under Linux, Windows, or macOS platforms (32 or 64 bit). The recommended
-          compilers are <strong>GFortran</strong> and <strong>Intel Fortran Compiler</strong>.
-        </p>
-        <p>
-          On Linux, unzip the compressed source using <code>unzip</code>. Compilation is
-          initiated by the <code>make</code> command (the <code>makefile</code> is already included in
-          the package). After successful compilation, the executable file has the name
-          <code>phsd.exe</code>.
-        </p>
-        <p>The same <code>makefile</code> runs under Windows Fortran 90 compilers.</p>
-        <p>
-          To run the code at LHC energies, use <code>make_LHC</code>, which compiles the code
-          with double precision (with the <code>-r8</code> option).
-        </p>
-      </div>
-    </section>
+  <section class="section reveal" id="build">
+  <div class="section-heading">
+    <h2>Compilation Requirements</h2>
+  </div>
+  <div class="section-text">
+    <p>
+      PHSD requires a <strong>Fortran 90 compiler</strong> and can be built on
+      <strong>Linux, Windows, or macOS</strong> (32- or 64-bit platforms).
+      The recommended compilers are <strong>GFortran</strong>,
+      <strong>Intel Fortran Compiler (ifort)</strong>, and
+      <strong>ifx</strong>.
+    </p>
+    <p>
+      On Linux, the recommended build system is <code>cmake</code>
+      (version <code>&gt;= 3.15</code>).
+    </p>
+    <p>
+      After a successful build, the executable is generated as
+      <code>phsd.exe</code>.
+    </p>
+    <p>
+      For calculations at LHC energies, a dedicated build target can be used to
+      enable double precision (equivalent to the <code>-r8</code> option).
+    </p>
+  </div>
+</section>
+
+<section class="section section-soft reveal" id="how-to-build">
+  <div class="section-heading">
+    <h2>How to Build</h2>
+  </div>
+  <article class="card">
+    <h3>Linux</h3>
+    <p>First extract the source package, then build the code in a separate directory:</p>
+    <pre><code>unzip phsd_source.zip
+mkdir build
+cd build
+cmake -DCMAKE_BUILD_TYPE=Release ..
+make</code></pre>
+
+    <p>
+      By default, <code>gfortran</code> is used. If supported, link-time optimization
+      is enabled automatically.
+    </p>
+
+    <p>To compile with Intel Fortran (<code>ifort</code>):</p>
+    <pre><code>cmake -DCMAKE_Fortran_COMPILER=ifort -DCMAKE_BUILD_TYPE=Release ..</code></pre>
+
+    <p>To compile with Intel LLVM Fortran (<code>ifx</code>):</p>
+    <pre><code>cmake -DCMAKE_Fortran_COMPILER=ifx -DCMAKE_BUILD_TYPE=Release ..</code></pre>
+
+    <p>
+      If supported by the compiler, interprocedural optimization is enabled automatically.
+    </p>
+
+    <p>For LHC-energy runs with double precision, use the dedicated target:</p>
+    <pre><code>make make_LHC</code></pre>
+  </article>
+</section>
 
     <section class="section section-soft reveal" id="input-file">
       <div class="section-heading">
