@@ -414,6 +414,7 @@
         title: "User Guide sections",
         items: [
           { label: "Overview", href: "manual.html#overview" },
+          { label: "User Guide PDF", href: "manual.html#user-guide-pdf" },
           { label: "How to Run the PHSD-PHQMD Code", href: "manual.html#run-code" },
           { label: "Compilation Requirements and Build", href: "manual.html#build" },
           { label: "Input File", href: "manual.html#input-file" },
