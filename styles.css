@@ -2008,6 +2008,36 @@ body[data-page="phsd"] .reveal.visible {
   line-height: 1.2;
 }
 
+.manual-download-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(220px, 0.8fr);
+  gap: 20px;
+  align-items: center;
+}
+
+.manual-download-copy p {
+  color: var(--muted);
+}
+
+.manual-download-figure {
+  display: flex;
+  justify-content: center;
+}
+
+.manual-download-figure img {
+  width: min(100%, 240px);
+  border-radius: 14px;
+  border: 1px solid rgba(36, 86, 132, 0.14);
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 10px 24px rgba(56, 94, 138, 0.12);
+}
+
+@media (max-width: 760px) {
+  .manual-download-card {
+    grid-template-columns: 1fr;
+  }
+}
+
 body[data-page="team"] .team-head-compact {
   border: none;
   background: transparent;
