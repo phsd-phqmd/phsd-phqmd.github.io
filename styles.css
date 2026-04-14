@@ -2283,3 +2283,12 @@ body[data-page="talks"] .reveal.visible {
   }
 }
 
+@media (max-width: 980px) {
+  body[data-page="home"] .reveal,
+  body[data-page="home"] .reveal.visible {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
