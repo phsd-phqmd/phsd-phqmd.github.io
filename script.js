@@ -400,7 +400,8 @@
         items: [
           { label: "PHSD-PHQMD Modeling Workflow", href: "index.html#home-workflow" },
           { label: "Special Features of PHSD-PHQMD", href: "index.html#home-features" },
-          { label: "Movies", href: "index.html#home-movies" }
+          { label: "Movies", href: "index.html#home-movies" },
+          { label: "Contact Us", href: "index.html#home-contact" }
         ]
       },
       about: {
